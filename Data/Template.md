@@ -5,7 +5,7 @@ title: Teaching Dossier Master Template
 author: Samarth Reddy
 role: Associate Professor of Practice
 email: iamsamarth@gmail.com
-portfolio: https://www.samreddy.work/
+portfolio: https://portfolio-5208db.webflow.io/
 updated: 2026-09-05
 ---
 
@@ -13,7 +13,7 @@ updated: 2026-09-05
 
 **Samarth Reddy** · MDes (Digital Futures, OCAD U) · MSc (Product Design, Coventry) · WES Verified  
 Associate Professor of Practice · School of Design, Graphic Era Deemed to be University  
-Email: [iamsamarth@gmail.com](mailto:iamsamarth@gmail.com) · Portfolio: [samreddy.work](https://www.samreddy.work/) · LinkedIn: [samredjunior](https://www.linkedin.com/in/samredjunior)  
+Email: [iamsamarth@gmail.com](mailto:iamsamarth@gmail.com) · Portfolio: [samreddy.work](https://portfolio-5208db.webflow.io/) · LinkedIn: [samredjunior](https://www.linkedin.com/in/samredjunior)  
 Location: Toronto, Canada · Dehradun, India  
 
 ---
@@ -252,7 +252,7 @@ Location: Toronto, Canada · Dehradun, India
 ---
 
 ### 15. Appendices & Verified Links
-- **Personal Portfolio:** [samreddy.work](https://www.samreddy.work/)
+- **Personal Portfolio:** [samreddy.work](https://portfolio-5208db.webflow.io/)
 - **LinkedIn Profile:** [linkedin.com/in/samredjunior](https://www.linkedin.com/in/samredjunior)
 - **WES Verified Credential:** [Official Badge Link](https://badges.wes.org/Evidence?i=0e17b702-4c84-4880-9d50-3a0d029cebe0&type=ca)
 - **UC Irvine Virtual Teacher:** [Coursera Certificate](https://www.coursera.org/account/accomplishments/specialization/certificate/7GUVHYUDZBKY)
