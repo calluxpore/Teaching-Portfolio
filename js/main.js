@@ -1,7 +1,13 @@
 // Teaching Dossier site JavaScript.
-// Reverting to standard HTML tables for more compact display layout.
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Intentionally left blank so tables stay as space-efficient data tables layout
-    // instead of converting them to large vertical boxes.
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+        });
+    }
 });
