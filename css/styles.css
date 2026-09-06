@@ -569,10 +569,15 @@ li {
         gap: 1.5rem;
     }
 
+    .navbar {
+        position: static !important;
+        top: auto !important;
+    }
+
     .toc {
-        position: sticky;
-        top: 60px;
-        z-index: 15;
+        position: static !important;
+        top: auto !important;
+        z-index: auto !important;
         background: #ffffff;
         border-left: 0;
         border: 1px solid var(--line);
@@ -581,7 +586,11 @@ li {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.4rem 1rem;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        box-shadow: none !important;
+    }
+
+    main section {
+        scroll-margin-top: 1.5rem;
     }
 
     .toc h2 {
@@ -719,8 +728,11 @@ li {
     }
 
     .toc {
+        position: static !important;
+        top: auto !important;
         grid-template-columns: 1fr;
         gap: 0.2rem;
+        box-shadow: none !important;
     }
 
     .nested-box-row {
