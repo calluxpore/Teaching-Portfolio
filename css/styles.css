@@ -1191,63 +1191,311 @@ details.disclosure[open] .disclosure-icon {
     }
 }
 
+.print-hint {
+    max-width: 62ch;
+    margin: -1.2rem 0 2.1rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px dashed var(--accent-ring);
+    border-radius: var(--radius-sm);
+    background: var(--accent-softer);
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.print-hint strong {
+    color: var(--text);
+}
+
 /* --------------------------------------------------------------------------
    15. PRINT
+
+   Note on the browser's own header and footer (URL, date, page numbers):
+   no stylesheet can turn those off. They are drawn by the browser outside the
+   document, and a zero @page margin does not suppress them, it only makes them
+   overlap the content. They are controlled solely by the "Headers and footers"
+   checkbox in the print dialog, which Chrome remembers between prints.
+   So we use real page margins here and keep every page evenly composed.
    -------------------------------------------------------------------------- */
 @media print {
+    @page {
+        size: A4;
+        margin: 16mm 15mm;
+    }
+
     :root {
         --bg: #ffffff;
         --bg-sunken: #ffffff;
         --card: #ffffff;
-        --text: #000000;
-        --text-muted: #333333;
-        --text-faint: #555555;
-        --accent: #7d3a12;
+        --card-hover: #ffffff;
+        --text: #14120f;
+        --text-muted: #3a352e;
+        --text-faint: #6a6359;
+        --accent: #8a4217;
+        --accent-hover: #8a4217;
         --accent-soft: transparent;
         --accent-softer: transparent;
-        --border: #cccccc;
-        --rule: #dddddd;
+        --accent-ring: #8a4217;
+        --border: #d5cec2;
+        --rule: #e3ddd2;
+        --shadow-sm: none;
+        --shadow-md: none;
+        --shadow-lg: none;
+        --radius: 6px;
+        --radius-sm: 4px;
     }
 
-    .site-header,
-    .toc,
-    .to-top,
-    .hero-actions,
-    .progress-bar {
-        display: none !important;
+    html,
+    body {
+        background: #ffffff;
     }
 
     body {
-        background: #ffffff;
+        padding: 0;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    /* Screen-only chrome. */
+    .skip-link,
+    .site-header,
+    .progress-bar,
+    .toc,
+    .to-top,
+    .hero-actions,
+    .print-hint {
+        display: none !important;
+    }
+
+    .container,
+    .layout,
+    .footer-inner {
+        max-width: none;
+        padding-inline: 0;
+        margin-inline: 0;
+    }
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* ---------- Cover page ----------
+       A4 height minus the 32mm of vertical page margin leaves 265mm of
+       content box; filling it lets the metrics sit at the foot of the cover. */
+    .hero {
+        background: none;
+        border-bottom: 0;
+        break-after: page;
+        overflow: visible;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        min-height: 262mm;
+        padding-block: 0;
+    }
+
+    /* .hero-content is the flex item, so the column has to continue through it
+       for the metrics strip to be able to sit at the foot of the cover. */
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    .hero .eyebrow {
+        font-size: 8pt;
+        letter-spacing: 0.16em;
+    }
+
+    .hero-title {
+        margin-top: 4mm;
+        font-size: 40pt;
+        line-height: 1;
+    }
+
+    .hero-subtitle {
+        margin: 4mm 0 8mm;
+        font-size: 14pt;
+        line-height: 1.3;
+        max-width: none;
+    }
+
+    .hero-identity {
+        gap: 1.5mm;
+        margin-bottom: 8mm;
+        padding-left: 5mm;
+        border-left-width: 2pt;
         font-size: 10.5pt;
     }
 
-    .hero {
-        background: none;
-        border-bottom: 1px solid #cccccc;
+    .hero-description {
+        max-width: none;
+        margin-bottom: 6mm;
+        font-size: 10.5pt;
     }
 
-    .layout {
-        display: block;
-        padding: 0;
+    .hero-meta {
+        margin-bottom: 0;
+        font-size: 8.5pt;
     }
 
+    .stats-strip {
+        margin-top: auto;
+        gap: 0;
+        border-color: var(--border);
+    }
+
+    .stat {
+        padding: 4mm 5mm;
+        border-right: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+    }
+
+    .stat-value {
+        font-size: 16pt;
+    }
+
+    .stat-label {
+        font-size: 8.5pt;
+    }
+
+    /* ---------- Body sections ---------- */
     .section {
-        break-inside: avoid;
-        padding-block: 1rem;
+        padding-block: 0;
+        border-top: 0 !important;
     }
 
+    .section + .section {
+        break-before: page;
+    }
+
+    .section-head {
+        margin-bottom: 6mm;
+    }
+
+    .section h2 {
+        font-size: 20pt;
+    }
+
+    .section-lead {
+        max-width: none;
+        font-size: 10pt;
+    }
+
+    /* Keep a heading welded to what follows it. */
+    h2,
+    h3,
+    h4 {
+        break-after: avoid;
+        break-inside: avoid;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* ---------- Cards ---------- */
     .pillar,
     .tl-card,
     .mentee,
-    .panel {
+    .panel,
+    .note,
+    .competency {
         break-inside: avoid;
         box-shadow: none;
-        border: 1px solid #dddddd;
     }
 
+    .pillars,
+    .timeline,
+    .mentees,
+    .panels {
+        gap: 5mm;
+        margin-top: 6mm;
+    }
+
+    /* Grid rows cannot split across a page boundary, so on paper the four
+       pillars flow as balanced columns instead. That lands all four on one
+       sheet rather than stranding the last one on a near empty page. */
+    .pillars {
+        display: block;
+        column-count: 2;
+        column-gap: 5mm;
+        margin-top: 5mm;
+    }
+
+    .pillar {
+        padding: 4mm 5mm;
+        margin-bottom: 5mm;
+        break-inside: avoid;
+    }
+
+    .pillar h3 {
+        margin: 1.2mm 0 1.8mm;
+        font-size: 12pt;
+    }
+
+    .pillar p {
+        line-height: 1.4;
+    }
+
+    .panel {
+        padding: 5mm 6mm;
+    }
+
+    .pillar p,
+    .tl-body,
+    .panel-list li,
+    .awards,
+    .placement {
+        font-size: 9.5pt;
+    }
+
+    /* Long institution names would otherwise bump the period pill onto its
+       own line, so both sides of the header run a step smaller on paper. */
+    .tl-card h3 {
+        font-size: 12pt;
+    }
+
+    .tl-period {
+        font-size: 7.5pt;
+        padding: 1mm 2.5mm;
+    }
+
+    .tl-head {
+        padding: 5mm 6mm 3.5mm;
+    }
+
+    .tl-metrics {
+        gap: 0;
+    }
+
+    .tl-metric {
+        padding: 3mm 6mm;
+        border-right: 1px solid var(--rule);
+    }
+
+    .tl-body {
+        padding: 4mm 6mm 5mm;
+    }
+
+    .mentee {
+        padding: 5mm 6mm;
+    }
+
+    .mentees {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* ---------- Disclosure prints expanded ---------- */
     details.disclosure {
-        border: none;
+        border: 1px solid var(--border);
+        margin-top: 6mm;
+        break-inside: avoid;
     }
 
     details.disclosure > summary {
@@ -1256,12 +1504,35 @@ details.disclosure[open] .disclosure-icon {
 
     details.disclosure .competencies {
         display: grid !important;
-        border-top: none;
-        padding-inline: 0;
+        border-top: 0;
+        padding: 5mm 6mm;
+        gap: 5mm;
     }
 
-    .reveal {
-        opacity: 1 !important;
-        transform: none !important;
+    /* ---------- Footer ---------- */
+    .footer {
+        margin-top: 8mm;
+        padding-top: 4mm;
+        border-top: 1px solid var(--border);
+        background: none;
+        break-inside: avoid;
+    }
+
+    .footer-inner {
+        padding: 0;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer p {
+        font-size: 8.5pt;
+    }
+
+    /* Underlines add noise on paper; the text still carries the reference. */
+    a {
+        text-decoration: none;
+        color: var(--accent);
     }
 }

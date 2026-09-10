@@ -50,11 +50,16 @@
     function initPrint() {
         const btn = document.getElementById("print-btn");
         if (!btn) return;
+        const hint = document.getElementById("print-hint");
+
         btn.addEventListener("click", function () {
             // Expand every disclosure so nothing is lost in the printed dossier.
             document.querySelectorAll("details").forEach(function (d) {
                 d.open = true;
             });
+            // The browser's own header/footer cannot be turned off from CSS, so
+            // surface the one control that does it once the dialog is open.
+            if (hint) hint.hidden = false;
             window.print();
         });
     }
