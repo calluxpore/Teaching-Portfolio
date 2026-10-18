@@ -151,6 +151,11 @@ h4 {
     color: var(--text);
 }
 
+p,
+li {
+    text-wrap: pretty;
+}
+
 p {
     margin: 0 0 1rem;
 }
@@ -390,6 +395,44 @@ img {
     min-width: 0;
 }
 
+.hero .eyebrow {
+    display: block;
+    text-wrap: balance;
+}
+
+/* Portrait sits beside the text on wide screens and drops into a cropped
+   banner above it on narrow ones. */
+.hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(20rem, 32vw, 26rem);
+    gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+}
+
+/* Spans the full text column, from the eyebrow down to the foot of the stats
+   strip. The image is taken out of flow so it fills that height without
+   adding its own to the row. */
+.hero-photo {
+    position: relative;
+    margin: 0;
+    align-self: stretch;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--card);
+}
+
+.hero-photo img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Weighted left so the phone stays in frame at the narrowest crops. */
+    object-position: 20% 50%;
+}
+
 .hero-title {
     margin: 0.7rem 0 0;
     font-family: var(--font-mono);
@@ -406,6 +449,7 @@ img {
     line-height: 1.42;
     color: var(--text-muted);
     font-style: italic;
+    text-wrap: balance;
 }
 
 .hero-identity {
@@ -503,7 +547,7 @@ img {
 /* Headline metrics */
 .stats-strip {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1px;
     background: var(--rule);
     border: 1px solid var(--rule);
@@ -823,11 +867,18 @@ main {
 /* --------------------------------------------------------------------------
    9. MENTEE CARDS
    -------------------------------------------------------------------------- */
+/* Column count follows the width of the section rather than the viewport,
+   because the TOC sidebar comes and goes: four tall cards per row when there
+   is room, then two, then one. */
+.section:has(> .mentees) {
+    container-type: inline-size;
+}
+
 .mentees {
     display: grid;
     gap: 1rem;
     margin-top: 1.6rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
 }
 
 .mentee {
@@ -903,6 +954,35 @@ main {
 .placement .eyebrow {
     display: block;
     margin-bottom: 0.3rem;
+}
+
+@container (min-width: 520px) {
+    .mentees {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@container (min-width: 820px) {
+    .mentees {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.85rem;
+    }
+
+    .mentee {
+        padding: 1.1rem 1.05rem 1rem;
+    }
+
+    .mentee h3 {
+        font-size: 1.05rem;
+    }
+
+    .awards {
+        font-size: 0.88rem;
+    }
+
+    .placement {
+        font-size: 0.86rem;
+    }
 }
 
 .note {
@@ -1039,7 +1119,8 @@ details.disclosure[open] .disclosure-icon {
 .footer-inner {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 2.25rem var(--pad-x) 2.75rem;
+    /* Extra right padding keeps the links clear of the fixed back-to-top button. */
+    padding: 2.25rem calc(var(--pad-x) + 3.5rem) 2.75rem var(--pad-x);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1136,6 +1217,27 @@ details.disclosure[open] .disclosure-icon {
 /* --------------------------------------------------------------------------
    14. RESPONSIVE
    -------------------------------------------------------------------------- */
+/* Below this the photo column would be a thin sliver of the full text height,
+   so the photo moves above the text as a banner instead. */
+@media (max-width: 1100px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .hero-photo {
+        order: -1;
+    }
+
+    .hero-photo img {
+        position: static;
+        height: auto;
+        max-height: 24rem;
+        aspect-ratio: 16 / 10;
+        object-position: 50% 10%;
+    }
+}
+
 @media (max-width: 1080px) {
     .layout {
         grid-template-columns: 1fr;
@@ -1182,8 +1284,22 @@ details.disclosure[open] .disclosure-icon {
         font-size: 0.9rem;
     }
 
+    /* The no-break title must fit the narrowest phones. */
+    .hero-title {
+        font-size: min(2.3rem, 8.4vw);
+    }
+
     .stats-strip {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Two columns here; a lone last metric spans the row instead of leaving an empty tile. */
+    .tl-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tl-metric:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
     }
 
     .tl-head,
@@ -1339,12 +1455,30 @@ details.disclosure[open] .disclosure-icon {
         padding-block: 0;
     }
 
-    /* .hero-content is the flex item, so the column has to continue through it
-       for the metrics strip to be able to sit at the foot of the cover. */
+    /* Dissolving .hero-content lets its children share one column with the
+       photo, which takes the free space between the intro and the metrics
+       strip at the foot of the cover. */
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
+        display: contents;
+    }
+
+    .hero-photo {
+        order: 1;
+        align-self: stretch;
+        flex: 1 1 0;
+        min-height: 0;
+        margin: 8mm 0;
+        border-radius: 3mm;
+    }
+
+    .hero-photo img {
+        height: 100%;
+        aspect-ratio: auto;
+        object-position: 50% 8%;
+    }
+
+    .hero .stats-strip {
+        order: 2;
     }
 
     .hero .eyebrow {
