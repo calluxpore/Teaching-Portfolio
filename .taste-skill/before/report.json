@@ -1,0 +1,2277 @@
+{
+ "url": "index.html",
+ "at": "2026-10-28T09:01:42.688Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.93,
+    0.69,
+    0.57,
+    0.67,
+    0.6,
+    0.49,
+    0.57,
+    0.67
+   ],
+   "motion": {
+    "elements": 33,
+    "css": 0,
+    "transitions": 32,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7047,
+     "screens": 7.8,
+     "words": 1908,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-portrait.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✱"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "chars": 16,
+     "lines": 1,
+     "size": 64,
+     "vw": 4.4,
+     "font": "MonoLisa",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.55,
+     "top": 168,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "lines": 1,
+     "size": 64,
+     "font": "MonoLisa"
+    },
+    "headings": [
+     {
+      "text": "Teaching Dossier",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "MonoLisa",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 168,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Teaching Philosophy: The Four Pillars",
+      "words": 5,
+      "chars": 37,
+      "lines": 1,
+      "size": 34.4,
+      "vw": 2.4,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 928,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Studio Trajectory & Curricular Leadership",
+      "words": 5,
+      "chars": 41,
+      "lines": 1,
+      "size": 34.4,
+      "vw": 2.4,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 2021,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Evidence of Student Learning and Success",
+      "words": 6,
+      "chars": 40,
+      "lines": 1,
+      "size": 34.4,
+      "vw": 2.4,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 3885,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scholarship, Open Source & Honors",
+      "words": 5,
+      "chars": 33,
+      "lines": 1,
+      "size": 34.4,
+      "vw": 2.4,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 5308,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Extracurriculars & Fun Time",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 34.4,
+      "vw": 2.4,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.65,
+      "top": 6101,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Atkinson Hyperlegible",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "MonoLisa",
+       "share": 0.1,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      27,
+      34,
+      64
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Atkinson Hyperlegible",
+      "size": 16,
+      "leading": 1.62,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 54,
+     "max": {
+      "size": 64,
+      "vw": 4.4,
+      "font": "MonoLisa",
+      "text": "Teaching Dossier"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0.1,
+     "monoFamilies": [
+      "MonoLisa"
+     ],
+     "monoSamples": [
+      "Skip to content",
+      "Portfolio",
+      "LinkedIn",
+      "HF",
+      "Civitai",
+      "GitHub"
+     ],
+     "microLabels": 27,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "Teaching Dossier · Updated September 202",
+      "Contents",
+      "Section 01",
+      "Section 02",
+      "Studios / Bootcamps",
+      "Contact Hours"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 43
+    },
+    "eyebrows": [
+     {
+      "text": "Teaching Dossier · Updated September 2026",
+      "above": "Teaching Dossier",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 139
+     },
+     {
+      "text": "Section 01",
+      "above": "Teaching Philosophy: The Four Pillars",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 901
+     },
+     {
+      "text": "Section 02",
+      "above": "Studio Trajectory & Curricular Leadershi",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 1994
+     },
+     {
+      "text": "Section 03",
+      "above": "Evidence of Student Learning and Success",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 3858
+     },
+     {
+      "text": "Section 04",
+      "above": "Scholarship, Open Source & Honors",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 5281
+     },
+     {
+      "text": "Section 05",
+      "above": "Extracurriculars & Fun Time",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 6074
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 936
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 972
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 1008
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 1044
+     },
+     {
+      "text": "05",
+      "size": 11.5,
+      "top": 1100
+     },
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 1114
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 1114
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 1540
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 1540
+     }
+    ],
+    "color": {
+     "bodyBg": "#0e0e11",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.1,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0e11",
+       "top": 59,
+       "hsl": {
+        "h": 240,
+        "s": 0.1,
+        "l": 0.06
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a49c8f",
+       "share": 0.82
+      },
+      {
+       "color": "#e8e4dc",
+       "share": 0.1
+      },
+      {
+       "color": "#8b8377",
+       "share": 0.06
+      },
+      {
+       "color": "#e8a33d",
+       "share": 0.01
+      },
+      {
+       "color": "#16120a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e8a33d",
+      "hsl": {
+       "h": 36,
+       "s": 0.79,
+       "l": 0.57
+      },
+      "fg": "#16120a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 32,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 2,
+     "heroLabels": [
+      "Skip to content",
+      "READ THE DOSSIER",
+      "PRINT / SAVE PDF"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 19,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero → radial-gradient(951.782px 465.316px at 82% -10%, rgba(232, 163, 61, 0.13), rgba(0, 0, 0, 0) 70%), radial-gradi"
+     ],
+     "gradientText": 0,
+     "hairlines": 20,
+     "hairlineSamples": [
+      "header.site-header 1440px",
+      "section.hero 1440px",
+      "section#teaching-responsibilities.section 942px",
+      "header.tl-head 940px",
+      "div.tl-metrics 940px"
+     ],
+     "outlinedBoxes": 22,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 22,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 671
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1945
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1086
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2152
+      },
+      {
+       "count": 7,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 4016
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.2
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "atkinson hyperlegible",
+     "monolisa"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7047,
+    "margins": {
+     "left": 88,
+     "right": 117
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 59,
+      "height": 790,
+      "words": 174,
+      "media": 1,
+      "middle": 74,
+      "heading": {
+       "text": "Teaching Dossier",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 88,
+      "right": 89,
+      "textLeft": 88,
+      "textRight": 577,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.layout",
+      "tag": "div",
+      "top": 849,
+      "height": 6069,
+      "words": 1988,
+      "media": 0,
+      "middle": 76,
+      "heading": {
+       "text": "Teaching Philosophy: The Four Pillars",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 110,
+      "textLeft": 88,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6918,
+      "height": 128,
+      "words": 22,
+      "media": 0,
+      "middle": 185,
+      "heading": null,
+      "left": 88,
+      "right": 156,
+      "textLeft": 88,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Teaching Dossier",
+      "size": 64,
+      "top": 168,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 428,
+      "n": 23
+     },
+     {
+      "x": 410,
+      "n": 10
+     },
+     {
+      "x": 906,
+      "n": 9
+     },
+     {
+      "x": 88,
+      "n": 3
+     },
+     {
+      "x": 667,
+      "n": 2
+     },
+     {
+      "x": 738,
+      "n": 1
+     },
+     {
+      "x": 1044,
+      "n": 1
+     },
+     {
+      "x": 1144,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 50,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.12,
+    "voidBox": {
+     "x": 180,
+     "y": 780,
+     "w": 1260,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    1,
+    0.82,
+    0.78,
+    0.86,
+    0.75,
+    0.92,
+    0.64,
+    0.75,
+    0.88
+   ],
+   "motion": {
+    "elements": 33,
+    "css": 0,
+    "transitions": 32,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8884,
+     "screens": 8.7,
+     "words": 1908,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-portrait.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✱"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "chars": 16,
+     "lines": 1,
+     "size": 41.5,
+     "vw": 5.4,
+     "font": "MonoLisa",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 556,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "lines": 1,
+     "size": 41.5,
+     "font": "MonoLisa"
+    },
+    "headings": [
+     {
+      "text": "Teaching Dossier",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "MonoLisa",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 556,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Atkinson Hyperlegible",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "MonoLisa",
+       "share": 0.1,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      26,
+      42
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Atkinson Hyperlegible",
+      "size": 16,
+      "leading": 1.62,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 85,
+     "max": {
+      "size": 41.5,
+      "vw": 5.4,
+      "font": "MonoLisa",
+      "text": "Teaching Dossier"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0.1,
+     "monoFamilies": [
+      "MonoLisa"
+     ],
+     "monoSamples": [
+      "Skip to content",
+      "Portfolio",
+      "LinkedIn",
+      "HF",
+      "Civitai",
+      "GitHub"
+     ],
+     "microLabels": 27,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "Teaching Dossier · Updated September 202",
+      "Contents",
+      "Section 01",
+      "Section 02",
+      "Studios / Bootcamps",
+      "Contact Hours"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 43
+    },
+    "eyebrows": [
+     {
+      "text": "Teaching Dossier · Updated September 2026",
+      "above": "Teaching Dossier",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 527
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 1302
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 1302
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 1302
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 1359
+     },
+     {
+      "text": "05",
+      "size": 11.5,
+      "top": 1359
+     },
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 1656
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 1957
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 2257
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 2557
+     }
+    ],
+    "color": {
+     "bodyBg": "#0e0e11",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.1,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0e11",
+       "top": 59,
+       "hsl": {
+        "h": 240,
+        "s": 0.1,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#16161b",
+       "top": 113,
+       "hsl": {
+        "h": 240,
+        "s": 0.1,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a49c8f",
+       "share": 0.82
+      },
+      {
+       "color": "#e8e4dc",
+       "share": 0.1
+      },
+      {
+       "color": "#8b8377",
+       "share": 0.06
+      },
+      {
+       "color": "#e8a33d",
+       "share": 0.01
+      },
+      {
+       "color": "#16120a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e8a33d",
+      "hsl": {
+       "h": 36,
+       "s": 0.79,
+       "l": 0.57
+      },
+      "fg": "#16120a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 32,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 2,
+     "heroLabels": [
+      "Skip to content",
+      "READ THE DOSSIER",
+      "PRINT / SAVE PDF"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 19,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero → radial-gradient(951.782px 465.316px at 82% -10%, rgba(232, 163, 61, 0.13), rgba(0, 0, 0, 0) 70%), radial-gradi"
+     ],
+     "gradientText": 0,
+     "hairlines": 27,
+     "hairlineSamples": [
+      "header.site-header 768px",
+      "section.hero 768px",
+      "section#teaching-responsibilities.section 707px",
+      "header.tl-head 705px",
+      "div.tl-metrics 705px"
+     ],
+     "outlinedBoxes": 23,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 23,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1055
+      },
+      {
+       "count": 7,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5017
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "atkinson hyperlegible",
+     "monolisa"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8884,
+    "margins": {
+     "left": 31,
+     "right": 52
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 59,
+      "height": 1159,
+      "words": 174,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching Dossier",
+       "size": 41,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 32,
+      "textLeft": 31,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "aside.toc",
+      "tag": "aside",
+      "top": 1250,
+      "height": 176,
+      "words": 25,
+      "media": 0,
+      "middle": 36,
+      "heading": {
+       "text": "Contents",
+       "size": 11,
+       "tag": "h2"
+      },
+      "left": 50,
+      "right": 126,
+      "textLeft": 50,
+      "textRight": 126,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching-philosophy.section",
+      "tag": "section",
+      "top": 1454,
+      "height": 1392,
+      "words": 490,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching Philosophy: The Four Pillars",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 36,
+      "textLeft": 31,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching-responsibilities.section",
+      "tag": "section",
+      "top": 2846,
+      "height": 1991,
+      "words": 503,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Studio Trajectory & Curricular Leadership",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 56,
+      "textLeft": 31,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#evidence.section",
+      "tag": "section",
+      "top": 4836,
+      "height": 1956,
+      "words": 419,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Evidence of Student Learning and Success",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 41,
+      "textLeft": 31,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#scholarship-awards.section",
+      "tag": "section",
+      "top": 6792,
+      "height": 918,
+      "words": 253,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Scholarship, Open Source & Honors",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 59,
+      "textLeft": 31,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#extracurriculars.section",
+      "tag": "section",
+      "top": 7710,
+      "height": 934,
+      "words": 298,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Extracurriculars & Fun Time",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 43,
+      "textLeft": 31,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 8708,
+      "height": 176,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 225,
+      "textLeft": 31,
+      "textRight": 225,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Teaching Dossier",
+      "size": 41,
+      "top": 556,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 52,
+      "n": 34
+     },
+     {
+      "x": 31,
+      "n": 13
+     },
+     {
+      "x": 415,
+      "n": 6
+     },
+     {
+      "x": 394,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 55,
+    "bodySize": 15,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    0.97,
+    0.81,
+    0.86,
+    0.81,
+    0.8,
+    0.92,
+    0.92,
+    0.83,
+    0.85,
+    0.92,
+    0.86
+   ],
+   "motion": {
+    "elements": 23,
+    "css": 0,
+    "transitions": 22,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 14237,
+     "screens": 16.9,
+     "words": 1905,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-portrait.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "✱"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "chars": 16,
+     "lines": 1,
+     "size": 32.8,
+     "vw": 8.4,
+     "font": "MonoLisa",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": true,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 385,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Teaching Dossier",
+     "words": 2,
+     "lines": 1,
+     "size": 32.8,
+     "font": "MonoLisa"
+    },
+    "headings": [
+     {
+      "text": "Teaching Dossier",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 32.8,
+      "vw": 8.4,
+      "font": "MonoLisa",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": true,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 385,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Teaching Philosophy: The Four Pillars",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1724,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Studio Trajectory & Curricular Leadership",
+      "words": 5,
+      "chars": 41,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4225,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Evidence of Student Learning and Success",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7520,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Scholarship, Open Source & Honors",
+      "words": 5,
+      "chars": 33,
+      "lines": 2,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10756,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Extracurriculars & Fun Time",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 25.6,
+      "vw": 6.6,
+      "font": "Atkinson Hyperlegible",
+      "weight": 700,
+      "tracking": -0.012,
+      "leading": 1.18,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12412,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Atkinson Hyperlegible",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "MonoLisa",
+       "share": 0.1,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      26,
+      33
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Atkinson Hyperlegible",
+      "size": 16,
+      "leading": 1.62,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 32.8,
+      "vw": 8.4,
+      "font": "MonoLisa",
+      "text": "Teaching Dossier"
+     },
+     "monoShare": 0.1,
+     "monoProseShare": 0.1,
+     "monoFamilies": [
+      "MonoLisa"
+     ],
+     "monoSamples": [
+      "Skip to content",
+      "Portfolio",
+      "GitHub",
+      "Teaching Dossier · Updated September 202",
+      "Teaching Dossier",
+      "Toronto, Canada"
+     ],
+     "microLabels": 27,
+     "microLabelShare": 0.029,
+     "microSamples": [
+      "Teaching Dossier · Updated September 202",
+      "Contents",
+      "Section 01",
+      "Section 02",
+      "Studios / Bootcamps",
+      "Contact Hours"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 43
+    },
+    "eyebrows": [
+     {
+      "text": "Teaching Dossier · Updated September 2026",
+      "above": "Teaching Dossier",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 356
+     },
+     {
+      "text": "Section 01",
+      "above": "Teaching Philosophy: The Four Pillars",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 1697
+     },
+     {
+      "text": "Section 02",
+      "above": "Studio Trajectory & Curricular Leadershi",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 4198
+     },
+     {
+      "text": "Section 03",
+      "above": "Evidence of Student Learning and Success",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 7493
+     },
+     {
+      "text": "Section 04",
+      "above": "Scholarship, Open Source & Honors",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 10729
+     },
+     {
+      "text": "Section 05",
+      "above": "Extracurriculars & Fun Time",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 11.2,
+      "top": 12385
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 1472
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 1509
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 1547
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 1585
+     },
+     {
+      "text": "05",
+      "size": 11.5,
+      "top": 1622
+     },
+     {
+      "text": "01",
+      "size": 11.5,
+      "top": 2037
+     },
+     {
+      "text": "02",
+      "size": 11.5,
+      "top": 2585
+     },
+     {
+      "text": "03",
+      "size": 11.5,
+      "top": 3107
+     },
+     {
+      "text": "04",
+      "size": 11.5,
+      "top": 3629
+     }
+    ],
+    "color": {
+     "bodyBg": "#0e0e11",
+     "bodyBgHsl": {
+      "h": 240,
+      "s": 0.1,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0e0e11",
+       "top": 59,
+       "hsl": {
+        "h": 240,
+        "s": 0.1,
+        "l": 0.06
+       }
+      },
+      {
+       "color": "#16161b",
+       "top": 2010,
+       "hsl": {
+        "h": 240,
+        "s": 0.1,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a49c8f",
+       "share": 0.82
+      },
+      {
+       "color": "#e8e4dc",
+       "share": 0.1
+      },
+      {
+       "color": "#8b8377",
+       "share": 0.06
+      },
+      {
+       "color": "#e8a33d",
+       "share": 0.01
+      },
+      {
+       "color": "#16120a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e8a33d",
+      "hsl": {
+       "h": 36,
+       "s": 0.79,
+       "l": 0.57
+      },
+      "fg": "#16120a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 32,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 8,
+     "upper": 2,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 19,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+      "article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px"
+     ],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.hero → radial-gradient(933.12px 456.192px at 82% -10%, rgba(232, 163, 61, 0.13), rgba(0, 0, 0, 0) 70%), radial-gradie"
+     ],
+     "gradientText": 0,
+     "hairlines": 27,
+     "hairlineSamples": [
+      "header.site-header 390px",
+      "section.hero 390px",
+      "section#teaching-responsibilities.section 358px",
+      "header.tl-head 356px",
+      "div.tl-metrics 356px"
+     ],
+     "outlinedBoxes": 23,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 23,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.24
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 59,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "atkinson hyperlegible",
+     "monolisa"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 14237,
+    "margins": {
+     "left": 16,
+     "right": 19
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 59,
+      "height": 1329,
+      "words": 174,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching Dossier",
+       "size": 33,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "aside.toc",
+      "tag": "aside",
+      "top": 1420,
+      "height": 249,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Contents",
+       "size": 11,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 96,
+      "textLeft": 35,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching-philosophy.section",
+      "tag": "section",
+      "top": 1697,
+      "height": 2468,
+      "words": 490,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Teaching Philosophy: The Four Pillars",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#teaching-responsibilities.section",
+      "tag": "section",
+      "top": 4165,
+      "height": 3295,
+      "words": 503,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Studio Trajectory & Curricular Leadership",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 35,
+      "textLeft": 16,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#evidence.section",
+      "tag": "section",
+      "top": 7460,
+      "height": 3222,
+      "words": 339,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Evidence of Student Learning and Success",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 39,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#scholarship-awards.section",
+      "tag": "section",
+      "top": 10682,
+      "height": 1655,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#extracurriculars.section",
+      "tag": "section",
+      "top": 12338,
+      "height": 1603,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 14004,
+      "height": 233,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 100,
+      "textLeft": 16,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Teaching Dossier",
+      "size": 33,
+      "top": 385,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 35,
+      "n": 35
+     },
+     {
+      "x": 16,
+      "n": 9
+     }
+    ],
+    "leftBlocks": 44,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "6 eyebrow/kicker label(s) above headings: \"Teaching Dossier · Updated September 2026\" above \"Teaching Dossier\"; \"Section 01\" above \"Teaching Philosophy: The Four Pillars\"; \"Section 02\" above \"Studio Trajectory & Curricular Leadershi\"; \"Section 03\" above \"Evidence of Student Learning and Success\"; \"Section 04\" above \"Scholarship, Open Source & Honors\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: MonoLisa — e.g. \"Skip to content\", \"Portfolio\", \"LinkedIn\", \"HF\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\", \"05\", \"01\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "27 tiny uppercase letter-spaced labels (e.g. \"Teaching Dossier · Updated September 202\", \"Contents\", \"Section 01\", \"Section 02\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: ✱",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): section.hero → radial-gradient(951.782px 465.316px at 82% -10%, rgba(232, 163, 61, 0.13), rgba(0, 0, 0, 0) 70%), radial-gradi",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "19 box-shadow(s) on elements at rest: article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px | article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px | article.pillar.reveal → rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "20 thin rule(s)/divider line(s): header.site-header 1440px | section.hero 1440px | section#teaching-responsibilities.section 942px | header.tl-head 940px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "22 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "5 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (text #e8e4dc).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 27, 34, 64).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (1 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "43 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 64px (4.4vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 88px on the left, 117px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 768,
+   "message": "The h1 is a bare name (\"Teaching Dossier\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\desktop-page-01.jpg",
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\tablet-page-01.jpg",
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\mobile-page-01.jpg",
+    "E:\\OneDrive\\Documents\\Git\\Teaching-Portfolio\\.taste-skill\\before\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
