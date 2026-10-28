@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching Dossier | Samarth Reddy</title>
+    <title>Samarth Reddy | Teaching Dossier</title>
     <meta name="description"
-        content="Teaching dossier of Samarth Reddy, Associate Professor of Practice at Graphic Era Deemed to be University. Studio-led pedagogy in design, computation, and artificial intelligence across 48 documented studios and 7 institutions.">
+        content="Teaching dossier of Samarth Reddy, Associate Professor of Practice at Graphic Era Deemed to be University. Design taught through making: 48 studios, 3,922 contact hours and 2,737 students across 7 institutions.">
     <meta name="author" content="Samarth Reddy">
-    <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0e0e11" media="(prefers-color-scheme: dark)">
-    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#133621">
+    <meta name="color-scheme" content="dark light">
 
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Teaching Dossier | Samarth Reddy">
+    <meta property="og:title" content="Samarth Reddy | Teaching Dossier">
     <meta property="og:description"
-        content="Studio-led pedagogy in design, computation, and artificial intelligence. 48 documented university studios across 7 institutions and 5 countries.">
-    <meta property="og:image" content="_assets/DPL_Logo.png">
-    <meta name="twitter:card" content="summary">
+        content="Design taught through making: 48 documented studios, 3,922 contact hours and 2,737 students across 7 institutions in 5 countries.">
+    <meta property="og:image" content="_assets/hero-portrait.webp">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="_assets/DPL_Logo.png">
-    <link rel="preload" href="Fonts/Atkinson-Hyperlegible-Regular-102.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="Fonts/Atkinson-Hyperlegible-Bold-102.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="Fonts/MonoLisa-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="Fonts/MonoLisa-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/styles.css?v=6">
+    <link rel="preload" href="Fonts/Atkinson-Hyperlegible-Regular-102.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/styles.css?v=7">
     <script>
         (function () {
-            var saved = localStorage.getItem('theme');
-            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            document.documentElement.setAttribute('data-theme',
-                (saved === 'dark' || (!saved && prefersDark)) ? 'dark' : 'light');
+            var root = document.documentElement;
+            root.classList.add('js');
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) { }
+            root.setAttribute('data-theme', saved === 'light' ? 'light' : 'dark');
         })();
     </script>
 </head>
@@ -39,642 +37,709 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- ==================== HEADER ==================== -->
-    <header class="site-header">
-        <div class="container nav">
-            <a class="nav-logo" href="https://portfolio-5208db.webflow.io/" target="_blank"
-                rel="noopener noreferrer">
-                <span class="nav-mark" aria-hidden="true">&#10033;</span> Samarth Reddy
-            </a>
-            <nav class="nav-right" aria-label="Navigation">
-                <a class="nav-link" href="https://portfolio-5208db.webflow.io/" target="_blank"
-                    rel="noopener noreferrer">Portfolio</a>
-                <a class="nav-link nav-hide-sm" href="https://www.linkedin.com/in/samredjunior" target="_blank"
-                    rel="noopener noreferrer">LinkedIn</a>
-                <a class="nav-link nav-hide-sm" href="https://huggingface.co/samredjr" target="_blank"
-                    rel="noopener noreferrer">HF</a>
-                <a class="nav-link nav-hide-sm" href="https://civitai.com/user/callux" target="_blank"
-                    rel="noopener noreferrer">Civitai</a>
-                <a class="nav-link" href="https://github.com/calluxpore" target="_blank"
-                    rel="noopener noreferrer">GitHub</a>
-                <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"
-                    title="Toggle dark mode">
-                    <svg class="sun-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-            </nav>
-            <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+    <header class="bar">
+        <a class="bar__mark" href="#top">Samarth Reddy</a>
+        <nav class="bar__nav" aria-label="Sections">
+            <a href="#philosophy">Philosophy</a>
+            <a href="#trajectory">Institutions</a>
+            <a href="#studios">Studios</a>
+            <a href="#students">Students</a>
+            <a href="#scholarship">Scholarship</a>
+        </nav>
+        <div class="bar__tools">
+            <button id="theme-toggle" class="bar__theme" type="button" aria-label="Switch to light mode">
+                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+                </svg>
+                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <button class="button button--small" type="button" data-print>Save as PDF</button>
         </div>
     </header>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-inner">
-            <div class="hero-content">
-                <span class="eyebrow">Teaching Dossier &middot; Updated September 2026</span>
-                <h1 class="hero-title" id="hero-title">Teaching&nbsp;Dossier</h1>
-                <p class="hero-subtitle">Studio-Led Pedagogy in Design, Computation, and Artificial Intelligence</p>
+    <main id="main">
 
-                <div class="hero-identity">
-                    <span><strong>Samarth Reddy</strong> &middot; MDes (Digital Futures, OCAD U) &middot; MSc (Product
-                        Design, Coventry) &middot; WES North America Verified</span>
-                    <span><strong>Associate Professor of Practice</strong> &middot; School of Design, Graphic Era Deemed
-                        to be University</span>
-                </div>
-
-                <p class="hero-description">
-                    I teach design students to think through making, bridging physical craft, creative code,
-                    parametric systems, and emerging AI architectures. Across foundation studios, undergraduate majors,
-                    and postgraduate cohorts in India, Canada, the UK, Germany, and Singapore, I create classrooms where
-                    computational fluency is demystified into a flexible expressive material, critique is direct and
-                    caring, and students develop the intellectual independence to interrogate the technologies that
-                    shape our collective future.
+        <!-- ==================== HERO ==================== -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero__text">
+                <h1 class="hero__title display" id="hero-title">
+                    <span class="line"><span data-line style="--i:0">Samarth</span></span>
+                    <span class="line"><span data-line style="--i:1">Reddy</span></span>
+                </h1>
+                <p class="hero__lead lead" data-load style="--d:420ms">Teaching dossier. Nineteen years teaching design
+                    students to think through making, in craft, code and AI.</p>
+                <p class="hero__facts" data-load style="--d:480ms">
+                    Associate Professor of Practice, School of Design<br>
+                    Graphic Era Deemed to be University, Dehradun<br>
+                    MDes Digital Futures, OCAD University. MSc Product Design, Coventry University.
                 </p>
-
-                <p class="hero-meta">
-                    <span>Toronto, Canada</span>
-                    <span class="dot" aria-hidden="true">&middot;</span>
-                    <span>Dehradun, India</span>
-                    <span class="dot" aria-hidden="true">&middot;</span>
-                    <a href="mailto:iamsamarth@gmail.com">iamsamarth@gmail.com</a>
-                </p>
-
-                <div class="hero-actions">
-                    <a class="btn" href="#teaching-philosophy">Read the dossier</a>
-                    <button class="btn btn-ghost" type="button" id="print-btn">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                            <rect x="6" y="14" width="12" height="8"></rect>
-                        </svg>
-                        Print / Save PDF
-                    </button>
+                <div class="hero__actions" data-load style="--d:540ms">
+                    <a class="button" href="#philosophy">Read the dossier</a>
+                    <a class="link" href="mailto:iamsamarth@gmail.com">iamsamarth@gmail.com</a>
                 </div>
                 <p class="print-hint" id="print-hint" hidden>
                     For a clean PDF, open <strong>More settings</strong> in the print dialog and untick
-                    <strong>Headers and footers</strong>. The browser adds those, not this page, and Chrome
-                    remembers the setting next time.
+                    <strong>Headers and footers</strong>.
                 </p>
-
-                <dl class="stats-strip">
-                    <div class="stat">
-                        <dt class="stat-value">19</dt>
-                        <dd class="stat-label">Years across industry and academia</dd>
-                    </div>
-                    <div class="stat">
-                        <dt class="stat-value">14+</dt>
-                        <dd class="stat-label">Years in design pedagogy &amp; higher ed</dd>
-                    </div>
-                    <div class="stat">
-                        <dt class="stat-value">7</dt>
-                        <dd class="stat-label">Higher-ed institutions</dd>
-                    </div>
-                    <div class="stat">
-                        <dt class="stat-value">4</dt>
-                        <dd class="stat-label">Levels taught: Foundation, UG, PG &amp; Professional</dd>
-                    </div>
-                </dl>
             </div>
-
-            <figure class="hero-photo">
+            <figure class="hero__picture" data-open>
                 <img src="_assets/hero-portrait.webp" width="1122" height="1402"
                     alt="Samarth Reddy in silhouette on a hilltop terrace at sunrise, checking his phone with a laptop bag over his shoulder"
                     fetchpriority="high">
             </figure>
-        </div>
-    </section>
+        </section>
 
-    <div class="layout">
-        <!-- ==================== TABLE OF CONTENTS ==================== -->
-        <aside class="toc">
-            <h2 class="toc-title">Contents</h2>
-            <ul class="toc-list" id="toc-list">
-                <li><a href="#teaching-philosophy"><span class="toc-num">01</span><span>Teaching Philosophy</span></a>
-                </li>
-                <li><a href="#teaching-responsibilities"><span class="toc-num">02</span><span>Studio Trajectory &amp;
-                            Leadership</span></a></li>
-                <li><a href="#evidence"><span class="toc-num">03</span><span>Evidence of Student Success</span></a></li>
-                <li><a href="#scholarship-awards"><span class="toc-num">04</span><span>Scholarship, Open Source &amp;
-                            Honors</span></a></li>
-                <li><a href="#extracurriculars"><span class="toc-num">05</span><span>Extracurriculars &amp; Fun
-                            Time</span></a></li>
-            </ul>
-        </aside>
-
-        <!-- ==================== MAIN ==================== -->
-        <main id="main">
-
-            <!-- 1. Teaching Philosophy -->
-            <section class="section" id="teaching-philosophy">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Section 01</span>
-                    <h2>Teaching Philosophy: The Four Pillars</h2>
-                    <p class="section-lead">
-                        I teach where design meets computation, craft meets code, and human intuition intersects with
-                        machine intelligence. Anchored in constructivist pedagogy, Universal Design for Learning (UDL),
-                        and critical technical inquiry, my practice is organized across four foundational commitments.
-                    </p>
+        <!-- ==================== RECORD ==================== -->
+        <section class="record" id="record" aria-labelledby="record-title">
+            <h2 class="record__title head" id="record-title" data-reveal>The teaching record</h2>
+            <div class="record__frame">
+                <video class="record__video" muted loop playsinline preload="metadata"
+                    poster="_assets/found/3d-printing-time-lapse-2026-poster.jpg" width="854" height="480"
+                    aria-hidden="true" data-loop>
+                    <source src="_assets/found/3d-printing-time-lapse-2026.webm" type="video/webm">
+                </video>
+                <div class="record__scrim" aria-hidden="true"></div>
+                <p class="record__figure display"><span data-roll>700</span></p>
+                <p class="record__note">first-year students learned 3D printing in a single studio I designed at
+                    UID, Gandhinagar, in November 2021.</p>
+            </div>
+            <dl class="record__figures">
+                <div data-reveal>
+                    <dt class="head"><span data-roll>48</span></dt>
+                    <dd>studios and workshops documented since 2017</dd>
                 </div>
-
-                <div class="pillars">
-                    <article class="pillar reveal">
-                        <span class="pillar-index">01</span>
-                        <h3>Experiential Learning Through Making</h3>
-                        <p>
-                            Design is not an abstract theory; it is an action-biased, experiential practice. In studios
-                            such as <em>Interactive Products</em> and <em>Physical Computing</em>, students do not simply
-                            wireframe conceptual interactions; they build working microcontroller circuits, interface
-                            physical actuators, and test prototypes with external mentors. Whether soldering physical
-                            sensors or fine-tuning a custom LoRA diffusion model, physical and digital construction is
-                            itself a form of rigorous cognitive synthesis. To reflect this, assessment rubrics
-                            deliberately weight process documentation, iterative experiments, and unsimulated failure
-                            loops in a 40/60 ratio with the final artefact.
-                        </p>
-                    </article>
-
-                    <article class="pillar reveal">
-                        <span class="pillar-index">02</span>
-                        <h3>Radical Accessibility of Computation</h3>
-                        <p>
-                            Makerspaces, algorithmic scripts, and coding environments can easily intimidate creative
-                            students who do not perceive themselves as &ldquo;technical.&rdquo; Guided by universal
-                            design principles, I make computational mediums radically accessible. In foundation coding
-                            courses such as <em>Programming 1: Creative Coding</em> and <em>Programming 2: Physical
-                                Computation</em>, I use live narrated coding: projecting my editor, vocalizing logic
-                            decisions, making deliberate syntax errors, and tracing bugs collaboratively in real time. We
-                            frame code not as an austere branch of software engineering, but as an expressive, plastic
-                            material like clay or timber.
-                        </p>
-                    </article>
-
-                    <article class="pillar reveal">
-                        <span class="pillar-index">03</span>
-                        <h3>Questioning as Method &amp; Speculative Inquiry</h3>
-                        <p>
-                            My objective as an educator is not to dispense ready-made solutions, but to cultivate acute
-                            analytical discernment. In speculative studios including <em>Design Fiction</em> and
-                            <em>Future Labs</em>, I challenge cohorts with provocations that resist rapid closure:
-                            <em>What does design owe future generations? Which communities are disenfranchised by current
-                                generative models? How does designing with AI differ from merely treating it as a
-                                production pipeline?</em> Through structured worldbuilding, dialectical inquiry, and
-                            diegetic prototyping, students transform critical skepticism into responsible, award-winning
-                            proposals.
-                        </p>
-                    </article>
-
-                    <article class="pillar reveal">
-                        <span class="pillar-index">04</span>
-                        <h3>Global Positionality and the Ethic of Care</h3>
-                        <p>
-                            Teaching is fundamentally an ongoing, compassionate labour of care. Having taught and
-                            mentored diverse cohorts across Canada, India, the UK, Germany, and Singapore, my pedagogy is
-                            deeply attuned to varying cultural assumptions, linguistic proficiencies, and learning
-                            modalities. Recognizing that rigid, high-stakes grading can penalize students whose thinking
-                            is sophisticated but whose English fluency is developing, my studio provides modular
-                            open-source code scaffolds, bilingual vocabulary aids, and consistent office-hour mentoring,
-                            establishing studio spaces founded on psychological safety, mutual dignity, and lifelong
-                            curiosity.
-                        </p>
-                    </article>
+                <div data-reveal>
+                    <dt class="head"><span data-roll>3,922</span></dt>
+                    <dd>contact hours in the studio</dd>
                 </div>
-            </section>
-
-            <!-- 2. Studio Trajectory & Curricular Leadership -->
-            <section class="section" id="teaching-responsibilities">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Section 02</span>
-                    <h2>Studio Trajectory &amp; Curricular Leadership</h2>
-                    <p class="section-lead">
-                        Verified record of university appointments, lab architecture, and curriculum leadership across
-                        14+ years, 7 institutions, and 48 documented studio deliveries.
-                    </p>
+                <div data-reveal>
+                    <dt class="head"><span data-roll>2,737</span></dt>
+                    <dd>students from foundation to postgraduate</dd>
                 </div>
-
-                <div class="timeline">
-                    <article class="tl-card reveal">
-                        <header class="tl-head">
-                            <div class="tl-titles">
-                                <h3>Graphic Era Deemed to be University</h3>
-                                <span class="tl-place">Dehradun, India &middot; School of Design</span>
-                                <span class="tl-role">Associate Professor of Practice</span>
-                            </div>
-                            <span class="tl-period">2025 to Present &middot; Full-Time Faculty</span>
-                        </header>
-                        <div class="tl-metrics">
-                            <div class="tl-metric"><b>11</b><span>Studios / Bootcamps</span></div>
-                            <div class="tl-metric"><b>481</b><span>Contact Hours</span></div>
-                            <div class="tl-metric"><b>912</b><span>Students Reached</span></div>
-                        </div>
-                        <p class="tl-body">
-                            Established cutting-edge AI Lab (30&times; NVIDIA RTX 5080 Blackwell workstations), Physical
-                            Computation Lab, and Wood/Metal Workshop. Serves on Board of Studies authoring curriculum
-                            descriptors and grading rubrics for Foundation (Y0) and Industrial Design (Y1). Designed
-                            high-scale bootcamps (<em>Marshmallow Wars</em>: 350 students; <em>Beyond the Fold</em>: 300
-                            students).
-                        </p>
-                    </article>
-
-                    <article class="tl-card reveal">
-                        <header class="tl-head">
-                            <div class="tl-titles">
-                                <h3>OCAD University</h3>
-                                <span class="tl-place">Toronto, Canada &middot; Faculty of Graduate Studies</span>
-                                <span class="tl-role">Graduate Fellow &amp; Academic Assistant</span>
-                            </div>
-                            <span class="tl-period">2023 to 2025 &middot; Graduate Appointments</span>
-                        </header>
-                        <div class="tl-metrics">
-                            <div class="tl-metric"><b>MDes</b><span>Digital Futures</span></div>
-                            <div class="tl-metric"><b>6</b><span>A / A+ Course Grades</span></div>
-                            <div class="tl-metric"><b>Thesis</b><span>Defended w/o Condition</span></div>
-                        </div>
-                        <p class="tl-body">
-                            Academic Assistant for Inclusive Design Master&rsquo;s program (INCD-6017/6009/6010).
-                            Research Assistant at IDEA Hub 5 on AI equity and disability communication. Experiment
-                            Designer at ACE Lab (MAFA/OMAFRA Project) developing AI/XR quantitative evaluation protocols
-                            and authoring TCPS2 Research Ethics Board (REB) protocols under Dr. Alexis Morris and Dr.
-                            Sara Diamond.
-                        </p>
-                    </article>
-
-                    <article class="tl-card reveal">
-                        <header class="tl-head">
-                            <div class="tl-titles">
-                                <h3>Pearl Academy &amp; UID (Karnavati University)</h3>
-                                <span class="tl-place">Mumbai, Bangalore &amp; Gandhinagar, India</span>
-                                <span class="tl-role">Associate Professor &amp; Portfolio Chair</span>
-                            </div>
-                            <span class="tl-period">2017 to 2023 &middot; Faculty Appointments</span>
-                        </header>
-                        <div class="tl-metrics">
-                            <div class="tl-metric"><b>37</b><span>Studio Courses</span></div>
-                            <div class="tl-metric"><b>3,441</b><span>Contact Hours</span></div>
-                            <div class="tl-metric"><b>1,825</b><span>Students Reached</span></div>
-                        </div>
-                        <p class="tl-body">
-                            Delivered 37 comprehensive studio courses across Industrial, Interaction, and Communication
-                            Design. Chaired Portfolio Assessment Team at UID; spearheaded the 700-student digital
-                            fabrication initiative; led Capstone thesis supervision producing multiple international
-                            award-winning projects (Gold IDA, EPDA, DNA Paris).
-                        </p>
-                    </article>
-
-                    <article class="tl-card reveal">
-                        <header class="tl-head">
-                            <div class="tl-titles">
-                                <h3>Raffles College of Design &amp; Early Corporate R&amp;D</h3>
-                                <span class="tl-place">Singapore &amp; Bangalore (Raffles) &middot; India
-                                    (Corporate)</span>
-                                <span class="tl-role">Program Director &amp; Corporate Consultant</span>
-                            </div>
-                            <span class="tl-period">2008 to 2016 &middot; Academic &amp; Industry</span>
-                        </header>
-                        <div class="tl-metrics">
-                            <div class="tl-metric"><b>31</b><span>Studio Modules</span></div>
-                            <div class="tl-metric"><b>CAD / FEA</b><span>Corporate Training</span></div>
-                            <div class="tl-metric"><b>Global</b><span>Client R&amp;D</span></div>
-                        </div>
-                        <p class="tl-body">
-                            Program Director at Raffles (4 years), overseeing academic governance, syllabus delivery, and
-                            31 modules in product and furniture design. Corporate CAD and Finite Element Analysis (FEA)
-                            consultant training engineering teams at Mercedes-Benz, Volvo, Ford, Boeing, Airbus, and the
-                            Indian Navy.
-                        </p>
-                    </article>
+                <div data-reveal>
+                    <dt class="head"><span data-roll>7</span></dt>
+                    <dd>institutions in India, Canada, Germany and Singapore</dd>
                 </div>
+            </dl>
+        </section>
 
-                <details class="disclosure reveal" open>
-                    <summary>
-                        Core Disciplinary Competencies: Curriculum Overview
-                        <svg class="disclosure-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                        </svg>
-                    </summary>
-                    <div class="competencies">
-                        <div class="competency">
-                            <h4>Computation, AI &amp; Creative Code</h4>
-                            <p>Design For and With AI, Physical Computing, Creative Coding (p5.js), Python &amp;
-                                Rhinoscript, LoRA Training &amp; ComfyUI Workflows, Immersive Tech (AR/VR).</p>
-                        </div>
-                        <div class="competency">
-                            <h4>Studio, Making &amp; Digital Fabrication</h4>
-                            <p>3D Printing at 700-student scale, Rhinoceros 3D, Keyshot &amp; C4D Rendering, Lighting
-                                Design Studio, Technically Complex Product Design, Model Workshop.</p>
-                        </div>
-                        <div class="competency">
-                            <h4>Design Methods &amp; Speculative Inquiry</h4>
-                            <p>Design Fiction, Future Labs &amp; Social Enterprise, Biophilic Design, Sustainable Design,
-                                Usability in Practice, Systems Design &amp; Dialectical Prototyping.</p>
-                        </div>
-                        <div class="competency">
-                            <h4>Interaction Design &amp; UX Systems</h4>
-                            <p>Interactive Products, Graduation Project Supervision, Open Labs 2.0 UX/UI, Ergonomics
-                                &amp; Anthropometry, Universal Design for Learning (UDL).</p>
-                        </div>
+        <!-- ==================== PHILOSOPHY ==================== -->
+        <section class="pin" id="philosophy" aria-labelledby="philosophy-title">
+            <div class="pin__stage">
+                <div class="pin__plate">
+                    <h2 class="head" id="philosophy-title">How I teach</h2>
+                    <p class="statement">Every studio runs the same way: frame the problem, make it with your
+                        hands, then critique it together.</p>
+                    <div class="rhythm" role="img"
+                        aria-label="A studio session: frame for 20 to 30 minutes, guided making for 60 to 90 minutes, then reflective critique">
+                        <span class="rhythm__part rhythm__part--frame">Frame<small>20–30 min</small></span>
+                        <span class="rhythm__part rhythm__part--make">Guided making<small>60–90 min</small></span>
+                        <span class="rhythm__part rhythm__part--critique">Critique<small>to close</small></span>
                     </div>
-                </details>
-            </section>
+                </div>
+            </div>
+            <div class="pin__photos">
+                <figure class="pin__photo pin__photo--1">
+                    <img src="_assets/found/multiple-shields-stacked-on-an-arduino-board.webp" width="1600"
+                        height="1200" alt="An Arduino board with three shields stacked on top, on a green cutting mat"
+                        loading="lazy">
+                    <figcaption>An Arduino with stacked shields, the kit of Physical Computing.</figcaption>
+                </figure>
+                <figure class="pin__photo pin__photo--2">
+                    <img src="_assets/found/multimeter-probes-on-breadboard.webp" width="1600" height="1200"
+                        alt="Red and black multimeter probes testing an LED circuit on a white breadboard"
+                        loading="lazy">
+                    <figcaption>Probing a breadboard circuit: the bug traced in the open.</figcaption>
+                </figure>
+                <figure class="pin__photo pin__photo--3">
+                    <img src="_assets/found/papierflieger-2021-7215.webp" width="1600" height="1067"
+                        alt="A folded white paper plane on a pale grey ground" loading="lazy">
+                    <figcaption>A paper plane, the brief of Beyond the Fold for 300 students.</figcaption>
+                </figure>
+                <figure class="pin__photo pin__photo--4">
+                    <img src="_assets/found/marshmallow-challenge.webp" width="1600" height="2133"
+                        alt="A spaghetti and tape tower topped with a marshmallow, built on a classroom desk"
+                        loading="lazy">
+                    <figcaption>A spaghetti and marshmallow tower, the brief of Marshmallow Tower Wars for 350
+                        students.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <!-- 3. Evidence of Student Learning and Success -->
-            <section class="section" id="evidence">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Section 03</span>
-                    <h2>Evidence of Student Learning and Success</h2>
-                    <p class="section-lead">
-                        Under my direct supervision and studio mentorship, student design projects have earned major
-                        international awards, prominent media features, and prestigious graduate placements globally.
+        <section class="beliefs" aria-labelledby="beliefs-title">
+            <h2 class="beliefs__title head" id="beliefs-title" data-reveal>Four convictions</h2>
+            <p class="beliefs__intro" data-reveal>Grounded in constructivist pedagogy, Universal Design for Learning
+                and critical technical inquiry, at the point where craft meets code and human intuition meets machine
+                intelligence.</p>
+
+            <article class="belief" data-reveal>
+                <h3 class="belief__name lead">Learning through making</h3>
+                <p>Design is an action-biased practice, not an abstract theory. In studios such as
+                    <em>Interactive Products</em> and <em>Physical Computing</em>, students build working
+                    microcontroller circuits, drive physical actuators and test prototypes with external mentors
+                    instead of wireframing interactions they never touch. Soldering a sensor and fine-tuning a
+                    custom LoRA diffusion model are both forms of thinking. Assessment follows: rubrics weight
+                    process documentation, iterative experiments and honest failure at 40 against 60 for the final
+                    artefact.</p>
+            </article>
+            <article class="belief" data-reveal>
+                <h3 class="belief__name lead">Computation for everyone</h3>
+                <p>Makerspaces and code can intimidate students who do not see themselves as technical. In
+                    foundation courses such as <em>Programming 1: Creative Coding</em> and <em>Programming 2:
+                        Physical Computation</em>, I code live on the projector, say each decision out loud, make
+                    deliberate syntax errors and trace the bugs with the class in real time. Code is treated not as
+                    a branch of software engineering but as a material, as plastic as clay or timber.</p>
+            </article>
+            <article class="belief" data-reveal>
+                <h3 class="belief__name lead">Questioning as method</h3>
+                <p>I want students to leave with judgement, not ready-made answers. In speculative studios such as
+                    <em>Design Fiction</em> and <em>Future Labs</em>, cohorts work with questions that resist quick
+                    closure: what does design owe future generations, which communities do current generative
+                    models leave out, and how is designing with AI different from using it as a production pipeline?
+                    Worldbuilding and diegetic prototyping turn their scepticism into responsible proposals, several
+                    of which have gone on to win international awards.</p>
+            </article>
+            <article class="belief" data-reveal>
+                <h3 class="belief__name lead">An ethic of care</h3>
+                <p>Teaching is a labour of care. Having taught cohorts in Canada, India, the UK, Germany and
+                    Singapore, I plan for different cultural assumptions, languages and ways of learning. High-stakes
+                    grading can penalise a student whose thinking is sophisticated but whose English is still
+                    developing, so my studios provide modular open-source code scaffolds, bilingual vocabulary aids
+                    and steady office hours, in a room built on psychological safety and mutual dignity.</p>
+            </article>
+        </section>
+
+        <!-- ==================== TRAJECTORY ==================== -->
+        <section class="story" id="trajectory" aria-labelledby="trajectory-title">
+            <div class="story__aside">
+                <h2 class="head" id="trajectory-title" data-reveal>Seven institutions, four countries</h2>
+                <p data-reveal>Nineteen years between engineering and the design studio: from CAD and finite element
+                    training for engineering teams, to running a programme in Singapore, to setting up the labs of a
+                    new design school in Dehradun.</p>
+            </div>
+
+            <div class="story__list">
+                <article class="place" data-period="2025 to now">
+                    <figure class="place__picture">
+                        <img src="_assets/found/view-of-doon-valley-from-kipling-trail.webp" width="1440" height="810"
+                            alt="The Doon valley seen from the Kipling Trail above Dehradun, hills fading into haze"
+                            loading="lazy">
+                        <figcaption>The Doon valley from the Kipling Trail, Dehradun.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">Graphic Era Deemed to be University</h3>
+                    <p class="place__role">Associate Professor of Practice, School of Design. Dehradun, India, 2025 to
+                        now.</p>
+                    <p class="place__metrics">11 studios and bootcamps, 481 contact hours, 912 students.</p>
+                    <p>Set up the AI Lab (30 NVIDIA RTX 5080 Blackwell workstations), the Physical Computation Lab
+                        and the wood and metal workshop. On the Board of Studies, writing curriculum descriptors and
+                        rubrics for Foundation and Industrial Design. Designed bootcamps at scale: <em>Marshmallow Tower
+                            Wars</em> for 350 students and <em>Beyond the Fold</em> for 300.</p>
+                </article>
+
+                <article class="place" data-period="2023 to 2025">
+                    <figure class="place__picture">
+                        <img src="_assets/found/ocad-university-toronto.webp" width="1600" height="1200"
+                            alt="The Sharp Centre for Design at OCAD University, a chequered box raised on coloured stilts above a street in Toronto"
+                            loading="lazy">
+                        <figcaption>The Sharp Centre for Design, OCAD University, Toronto.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">OCAD University</h3>
+                    <p class="place__role">Graduate fellow and academic assistant, Faculty of Graduate Studies.
+                        Toronto, Canada, 2023 to 2025.</p>
+                    <p class="place__metrics">MDes Digital Futures, six A and A+ grades, thesis passed without
+                        condition.</p>
+                    <p>Academic assistant for the Inclusive Design master’s programme (INCD-6017, 6009, 6010).
+                        Research assistant at IDEA Hub 5 on AI equity and disability communication. Experiment
+                        designer at the ACE Lab on the MAFA and OMAFRA project, building evaluation protocols for AI
+                        and mixed reality and writing TCPS2 research ethics protocols with Dr. Alexis Morris and
+                        Dr. Sara Diamond.</p>
+                </article>
+
+                <article class="place" data-period="2022 to 2023">
+                    <figure class="place__picture">
+                        <img src="_assets/found/tree-canopy-at-cubbon-park-bengaluru-2026.webp" width="1600"
+                            height="1205" alt="Looking up through the branching canopy of old trees in Cubbon Park"
+                            loading="lazy">
+                        <figcaption>The canopy of Cubbon Park, Bengaluru.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">Pearl Academy, Bengaluru</h3>
+                    <p class="place__role">Associate Professor. Bengaluru, India, 2022 to 2023.</p>
+                    <p class="place__metrics">12 studios, 610 contact hours, 71 students.</p>
+                    <p>Undergraduate and postgraduate studios in representation, 3D modelling, interactive tools,
+                        ergonomics, physical computing, immersive technology and visual scripting in VVVV, and
+                        supervision of interaction design graduation projects.</p>
+                </article>
+
+                <article class="place" data-period="2021 to 2022">
+                    <figure class="place__picture">
+                        <img src="_assets/found/mahatma-mandir-gandhinagar.webp" width="1600" height="1200"
+                            alt="A long reflecting pool beside the Mahatma Mandir in Gandhinagar, with a cable-stayed tower behind"
+                            loading="lazy">
+                        <figcaption>The Mahatma Mandir, Gandhinagar.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">Unitedworld Institute of Design, Karnavati University</h3>
+                    <p class="place__role">Associate Professor and Chair of the Portfolio Assessment Team. Gandhinagar,
+                        India, 2021 to 2022.</p>
+                    <p class="place__metrics">10 studios, 675 contact hours, 1,471 students.</p>
+                    <p>Led the 700-student introduction to 3D printing with modular packets and calibrated peer
+                        review, and taught sustainable design, new media, digital rendering, computing systems and
+                        technically complex product design from foundation to master’s level.</p>
+                </article>
+
+                <article class="place" data-period="2022">
+                    <figure class="place__picture">
+                        <img src="_assets/found/berlin-mitte-june-2023-01.webp" width="1600" height="1000"
+                            alt="Berlin Mitte from above on a summer evening, the Spree and the television tower in the distance"
+                            loading="lazy">
+                        <figcaption>Berlin Mitte and the Spree.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">University of Applied Sciences Europe</h3>
+                    <p class="place__role">External reviewer and master’s thesis examiner. Berlin, Germany, 2022.</p>
+                    <p>Examined master’s theses in Visual and Experience Design for the summer semester of 2022.</p>
+                </article>
+
+                <article class="place" data-period="2017 to 2021">
+                    <figure class="place__picture">
+                        <img src="_assets/found/mumbai-skyline-and-sail-boats.webp" width="1600" height="1067"
+                            alt="Sail boats moored in the bay in front of the Mumbai skyline on a hazy day"
+                            loading="lazy">
+                        <figcaption>Sail boats in front of the Mumbai skyline.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">Pearl Academy, Mumbai</h3>
+                    <p class="place__role">Associate Professor for four years and eight months. Mumbai, India, 2017 to
+                        2021.</p>
+                    <p class="place__metrics">15 studios, 2,156 contact hours, 283 students.</p>
+                    <p>Curriculum lead and capstone supervisor in industrial, interaction and communication design,
+                        with placement liaison. The graduation projects supervised here went on to win Gold at the
+                        IDA Design Awards, EPDA and DNA Paris.</p>
+                </article>
+
+                <article class="place" data-period="2008 to 2016">
+                    <figure class="place__picture">
+                        <img src="_assets/found/bras-basah-9711279392.webp" width="1600" height="1067"
+                            alt="Bras Basah in Singapore at dusk, towers above a street of lit shophouses"
+                            loading="lazy">
+                        <figcaption>Bras Basah, Singapore, at dusk.</figcaption>
+                    </figure>
+                    <h3 class="place__name lead">Raffles College of Design and Commerce</h3>
+                    <p class="place__role">Programme Director for four years. Singapore and Bengaluru, 2013 to 2016.
                     </p>
+                    <p class="place__metrics">31 studio modules in product and furniture design.</p>
+                    <p>Academic governance and syllabus delivery across two campuses. Before that, from 2008 to 2012,
+                        CAD and finite element analysis faculty at ProSIM R&amp;D and EduCADD, then consultant at EDS
+                        Technologies and Geometric, training engineering teams at Mercedes-Benz, Volvo, Ford, Boeing,
+                        Airbus and the Indian Navy.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== STUDIOS (REGISTER) ==================== -->
+        <section class="register" id="studios" aria-labelledby="studios-title">
+            <div class="register__head">
+                <h2 class="head" id="studios-title" data-reveal>Every studio since 2017</h2>
+                <p data-reveal>The full register from the class database. Choose an institution to see its share.</p>
+            </div>
+
+            <div class="register__controls" data-reveal>
+                <div class="register__filters" role="group" aria-label="Show studios from">
+                    <button type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" data-filter="geu" aria-pressed="false">Graphic Era</button>
+                    <button type="button" data-filter="uid" aria-pressed="false">UID</button>
+                    <button type="button" data-filter="pab" aria-pressed="false">Pearl Bengaluru</button>
+                    <button type="button" data-filter="pam" aria-pressed="false">Pearl Mumbai</button>
                 </div>
+                <p class="register__totals lead" aria-live="polite" data-totals>48 studios, 3,922 hours, 2,737
+                    students</p>
+            </div>
 
-                <div class="mentees">
-                    <article class="mentee reveal">
-                        <h3>Kara 108RG</h3>
-                        <p class="mentee-person"><b>Shraddha Kumbhar</b> &middot; Pearl Academy &middot; Industrial
-                            Design</p>
-                        <ul class="awards">
-                            <li>Showcased at Global Grad Show, Dubai Design Week 2020</li>
-                            <li>Curated Selection by design critic Caroline Roux</li>
-                            <li>Featured in <em>Dezeen</em>, <em>Asia Today</em>, <em>Disruptive Asia</em></li>
-                            <li>Most Professional Project Award, Graduation Showcase</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>Vancouver,
-                                Canada</strong>; practicing Product Designer at Standard Fusion and Esvedra Wellness.</p>
-                    </article>
+            <table class="reg">
+                <caption class="sr-only">Studios and workshops taught, newest first</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Studio</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Load</th>
+                        <th scope="col">Month</th>
+                    </tr>
+                </thead>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2026</th></tr>
+                    <tr data-inst="geu" data-h="45" data-s="8"><td>Design Studio 1: Lighting Design</td><td>Industrial Design, semester 3</td><td>Graphic Era</td><td>45 h, 8 students</td><td>Jul</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="8"><td>Technical Drawing and 3D Modeling</td><td>Industrial Design, semester 3</td><td>Graphic Era</td><td>45 h, 8 students</td><td>Jul</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="8"><td>Ergonomics in Product Design</td><td>Industrial Design, semester 3</td><td>Graphic Era</td><td>45 h, 8 students</td><td>Jul</td></tr>
+                    <tr data-inst="geu" data-h="8" data-s="300"><td>Beyond the Fold: paper planes</td><td>Aspirant bootcamp</td><td>Graphic Era</td><td>8 h, 300 students</td><td>Jul</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="43"><td>Programming 2: Physical Computation</td><td>Foundation</td><td>Graphic Era</td><td>45 h, 43 students</td><td>Feb</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="43"><td>Design For and With AI</td><td>Foundation</td><td>Graphic Era</td><td>45 h, 43 students</td><td>Jan</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="43"><td>Biophilic Design</td><td>Foundation</td><td>Graphic Era</td><td>45 h, 43 students</td><td>Jan</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2025</th></tr>
+                    <tr data-inst="geu" data-h="75" data-s="33"><td>Visualization and Representation</td><td>Foundation</td><td>Graphic Era</td><td>75 h, 33 students</td><td>Sep</td></tr>
+                    <tr data-inst="geu" data-h="75" data-s="43"><td>Programming 1: Creative Coding</td><td>Foundation</td><td>Graphic Era</td><td>75 h, 43 students</td><td>Aug</td></tr>
+                    <tr data-inst="geu" data-h="45" data-s="33"><td>Interaction Fundamentals</td><td>Foundation</td><td>Graphic Era</td><td>45 h, 33 students</td><td>Jul</td></tr>
+                    <tr data-inst="geu" data-h="8" data-s="350"><td>Marshmallow Tower Wars</td><td>Aspirant bootcamp</td><td>Graphic Era</td><td>8 h, 350 students</td><td>Jul</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2023</th></tr>
+                    <tr data-inst="pab" data-h="64" data-s="6"><td>Advanced Digital Tools 2</td><td>UG year 2</td><td>Pearl Bengaluru</td><td>64 h, 6 students</td><td>Aug</td></tr>
+                    <tr data-inst="pab" data-h="10" data-s="12"><td>Interaction Design: Graduation Project</td><td>PG year 2</td><td>Pearl Bengaluru</td><td>10 h, 12 students</td><td>Jun</td></tr>
+                    <tr data-inst="pab" data-h="8" data-s="2"><td>Core Principles of Programming</td><td>PG year 1</td><td>Pearl Bengaluru</td><td>8 h, 2 students</td><td>Jun</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="5"><td>Ergonomics</td><td>UG year 1</td><td>Pearl Bengaluru</td><td>64 h, 5 students</td><td>Apr</td></tr>
+                    <tr data-inst="pab" data-h="16" data-s="10"><td>Visual Scripting in VVVV</td><td>PG year 1</td><td>Pearl Bengaluru</td><td>16 h, 10 students</td><td>Apr</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="3"><td>Advanced Digital Tools</td><td>UG year 2</td><td>Pearl Bengaluru</td><td>64 h, 3 students</td><td>Mar</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="5"><td>Immersive Technology</td><td>PG year 2</td><td>Pearl Bengaluru</td><td>64 h, 5 students</td><td>Feb</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="5"><td>Interactive Tools, second cohort</td><td>UG year 2</td><td>Pearl Bengaluru</td><td>64 h, 5 students</td><td>Feb</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="3"><td>Interactive Tools, first cohort</td><td>UG year 2</td><td>Pearl Bengaluru</td><td>64 h, 3 students</td><td>Jan</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2022</th></tr>
+                    <tr data-inst="pab" data-h="64" data-s="12"><td>Physical Computing</td><td>PG year 2</td><td>Pearl Bengaluru</td><td>64 h, 12 students</td><td>Nov</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="5"><td>Design Representation</td><td>UG year 1</td><td>Pearl Bengaluru</td><td>64 h, 5 students</td><td>Oct</td></tr>
+                    <tr data-inst="pab" data-h="64" data-s="3"><td>3D Modelling</td><td>UG year 2</td><td>Pearl Bengaluru</td><td>64 h, 3 students</td><td>Oct</td></tr>
+                    <tr data-inst="uid" data-h="80" data-s="70"><td>Digital Exposure 1</td><td>UG year 1</td><td>UID</td><td>80 h, 70 students</td><td>Aug</td></tr>
+                    <tr data-inst="uid" data-h="100" data-s="17"><td>Technically Complex Product Design</td><td>PG year 1</td><td>UID</td><td>100 h, 17 students</td><td>Aug</td></tr>
+                    <tr data-inst="uid" data-h="100" data-s="71"><td>Interdisciplinary Design Project</td><td>UG year 1</td><td>UID</td><td>100 h, 71 students</td><td>Apr</td></tr>
+                    <tr data-inst="uid" data-h="80" data-s="39"><td>Introduction to Computing Systems</td><td>Foundation</td><td>UID</td><td>80 h, 39 students</td><td>Apr</td></tr>
+                    <tr data-inst="uid" data-h="35" data-s="104"><td>Digital Rendering</td><td>UG year 2</td><td>UID</td><td>35 h, 104 students</td><td>Feb</td></tr>
+                    <tr data-inst="uid" data-h="80" data-s="171"><td>New Age Media</td><td>Foundation</td><td>UID</td><td>80 h, 171 students</td><td>Jan</td></tr>
+                    <tr data-inst="uid" data-h="80" data-s="91"><td>Introduction to Sustainable Design</td><td>UG year 3</td><td>UID</td><td>80 h, 91 students</td><td>Jan</td></tr>
+                    <tr data-inst="uid" data-h="40" data-s="104"><td>Digital Exposure 2</td><td>UG year 2</td><td>UID</td><td>40 h, 104 students</td><td>Jan</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2021</th></tr>
+                    <tr data-inst="uid" data-h="40" data-s="104"><td>Reduce, Reuse and Recycle workshop</td><td>UG year 2</td><td>UID</td><td>40 h, 104 students</td><td>Nov</td></tr>
+                    <tr data-inst="uid" data-h="40" data-s="700"><td>Introduction to 3D Printing</td><td>Foundation</td><td>UID</td><td>40 h, 700 students</td><td>Nov</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2020</th></tr>
+                    <tr data-inst="pam" data-h="120" data-s="13"><td>Open Labs 2.0: UX and UI</td><td>UG year 2</td><td>Pearl Mumbai</td><td>120 h, 13 students</td><td>Nov</td></tr>
+                    <tr data-inst="pam" data-h="120" data-s="13"><td>Portfolio workshop</td><td>UG year 3</td><td>Pearl Mumbai</td><td>120 h, 13 students</td><td>Nov</td></tr>
+                    <tr data-inst="pam" data-h="80" data-s="40"><td>Future Labs and Social Enterprise</td><td>UG year 2</td><td>Pearl Mumbai</td><td>80 h, 40 students</td><td>Oct</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>Usability in Practice</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Sep</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>3D Tools</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Mar</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>Interactive Tools</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Feb</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2019</th></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>Design Fiction</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Oct</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="13"><td>Experience Design</td><td>UG year 3</td><td>Pearl Mumbai</td><td>160 h, 13 students</td><td>Sep</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>Rhino Modelling</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Sep</td></tr>
+                    <tr data-inst="pam" data-h="120" data-s="24"><td>Open Labs 2.0: Portfolio</td><td>UG year 2</td><td>Pearl Mumbai</td><td>120 h, 24 students</td><td>Aug</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="24"><td>Design Methods</td><td>UG year 2</td><td>Pearl Mumbai</td><td>160 h, 24 students</td><td>Jul</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="4"><td>Graduation Project Supervision</td><td>UG year 3</td><td>Pearl Mumbai</td><td>160 h, 4 students</td><td>Jan</td></tr>
+                </tbody>
+                <tbody data-year>
+                    <tr class="reg__year"><th colspan="5" scope="colgroup">2017</th></tr>
+                    <tr data-inst="pam" data-h="116" data-s="8"><td>Immersion</td><td>Foundation</td><td>Pearl Mumbai</td><td>116 h, 8 students</td><td>Jun</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="12"><td>Interactive Products</td><td>PG year 1</td><td>Pearl Mumbai</td><td>160 h, 12 students</td><td>May</td></tr>
+                    <tr data-inst="pam" data-h="160" data-s="12"><td>Industrial Product Development</td><td>PG year 1</td><td>Pearl Mumbai</td><td>160 h, 12 students</td><td>Mar</td></tr>
+                </tbody>
+            </table>
 
-                    <article class="mentee reveal">
-                        <h3>Artemis 389</h3>
-                        <p class="mentee-person"><b>Anuja Tripathi</b> &middot; Pearl Academy &middot; Industrial Design
-                        </p>
-                        <ul class="awards">
-                            <li>Gold Award, IDA Design Awards 2021</li>
-                            <li>Top Winner, European Product Design Awards (EPDA 2020)</li>
-                            <li>Winner, DNA Paris Design Awards 2021</li>
-                            <li>Featured in <em>IF World Design Guide 2020</em></li>
-                            <li>Finalist, IXDA Interaction Awards 2021</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>Stockholm,
-                                Sweden</strong> after Master&rsquo;s from Ume&aring; Institute of Design (UID), Sweden.
-                        </p>
-                    </article>
+            <p class="register__note">Not in the register: 31 modules at Raffles (2013 to 2016), graduate teaching
+                at OCAD University, and corporate CAD and FEA training from 2008 to 2012.</p>
 
-                    <article class="mentee reveal">
-                        <h3>Budding Buddy</h3>
-                        <p class="mentee-person"><b>Shivani Jadhav</b> &middot; Pearl Academy &middot; Industrial Design
-                        </p>
-                        <ul class="awards">
-                            <li>First Prize, Awwchitecture Design Competition 2019</li>
-                            <li>First Prize, ADI Battle of the Projects (Pune Design Fest 2020)</li>
-                            <li>Course Winner, Adobe XD RMIT UX Awards 2021</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>Melbourne,
-                                Australia</strong>; pursued advanced graduate studies at RMIT / University of Melbourne;
-                            Industrial and graphic designer at Ozito powered by Einhell.</p>
-                    </article>
-
-                    <article class="mentee reveal">
-                        <h3>Carapace</h3>
-                        <p class="mentee-person"><b>Vaishnavi Shiroorkar</b> &middot; Pearl Academy &middot; Industrial
-                            Design</p>
-                        <ul class="awards">
-                            <li>Environmental Sustainability Award, TISDC 2022</li>
-                            <li>Multiple Awards, IDA Design Awards 2022 (Society &amp; Life Safety)</li>
-                            <li>Winner, European Product Design Awards (EPDA 2023)</li>
-                            <li>Winner, DNA Paris Design Awards 2023</li>
-                            <li>Finalist, London International Creative Competition (LICC 2022)</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>London,
-                                UK</strong> after Master&rsquo;s at RCA; Industrial Designer leading social enterprise
-                            and emergency shelter design initiatives.</p>
-                    </article>
-
-                    <article class="mentee reveal">
-                        <h3>Karat</h3>
-                        <p class="mentee-person"><b>Harsh Lotiya</b> &middot; Pearl Academy &middot; Industrial Design
-                        </p>
-                        <ul class="awards">
-                            <li>Featured Design for Design:Impact Awards 2020</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>Dublin,
-                                Ireland</strong> after Master&rsquo;s in UCD; Industrial design and interaction design
-                            practitioner in consumer products.</p>
-                    </article>
-
-                    <article class="mentee reveal">
-                        <h3>Teemo</h3>
-                        <p class="mentee-person"><b>Harshit Tareja</b> &middot; Pearl Academy &middot; Industrial Design
-                        </p>
-                        <ul class="awards">
-                            <li>Shortlisted for Design Singapore Council Awards</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to
-                            <strong>Singapore</strong>; Interaction Designer.</p>
-                    </article>
-
-                    <article class="mentee reveal">
-                        <h3>Corporate Leadership</h3>
-                        <p class="mentee-person"><b>Rhea Matthew</b> &middot; Pearl Academy &middot; Industrial Design
-                        </p>
-                        <ul class="awards">
-                            <li>Corporate CEO Award Winner, sole designer recognized across the entire
-                                organization</li>
-                        </ul>
-                        <p class="placement"><span class="eyebrow">Placement</span>Relocated to <strong>Loughborough,
-                                UK</strong> after Master&rsquo;s at Loughborough University, UK; Senior UX and Product
-                            Design Lead.</p>
-                    </article>
+            <div class="fields">
+                <h3 class="fields__title lead" data-reveal>What the studios cover</h3>
+                <div class="fields__item" data-reveal>
+                    <h4>Computation, AI and creative code</h4>
+                    <p>Design For and With AI, physical computing, creative coding in p5.js, Python and Rhinoscript,
+                        LoRA training and ComfyUI workflows, immersive technology.</p>
                 </div>
-
-                <p class="note reveal">
-                    <strong>Instructional scalability on record:</strong> Successfully led 700-student digital
-                    fabrication studio at UID with modular packets and calibrated peer-review pipelines; orchestrated
-                    350-student <em>Marshmallow Tower Wars</em> and 300-student <em>Beyond the Fold</em> aerodynamics
-                    showdown at Graphic Era University.
-                </p>
-            </section>
-
-            <!-- 4. Scholarship, Open Source & Honors -->
-            <section class="section" id="scholarship-awards">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Section 04</span>
-                    <h2>Scholarship, Open Source &amp; Honors</h2>
-                    <p class="section-lead">
-                        My scholarship directly feeds studio experimentation, grounding classroom briefs in verified
-                        inquiry across artificial intelligence, cognitive memory, and inclusive interaction.
-                    </p>
+                <div class="fields__item" data-reveal>
+                    <h4>Making and digital fabrication</h4>
+                    <p>3D printing at 700-student scale, Rhinoceros 3D, KeyShot and Cinema 4D rendering, lighting
+                        design, technically complex product design, the model workshop.</p>
                 </div>
-
-                <div class="panels">
-                    <section class="panel reveal" aria-labelledby="panel-research">
-                        <h3 id="panel-research">Frontier Research, Open Source &amp; AI Impact</h3>
-                        <ul class="panel-list">
-                            <li>
-                                <strong>Civitai Global Creator (<a href="https://civitai.com/user/callux" target="_blank"
-                                        rel="noopener noreferrer">@callux</a>)</strong>
-                                75+ trained custom neural models, 12,000+ community downloads, 3,500+ generated artworks.
-                                Selected for the curated <em>Fragments of Visions</em> showcase (May 2026).
-                            </li>
-                            <li>
-                                <strong>ACE Lab &amp; OMAFRA Evaluation (OCAD U)</strong>
-                                Designed quantitative evaluation metrics and experimental protocols for AI and Mixed
-                                Reality; authored TCPS2 Research Ethics Board (REB) protocols.
-                            </li>
-                            <li>
-                                <strong>15 Published Critical Essays</strong>
-                                Monographs on synthetic memory, latent space, prosopagnosia cognitive aids (<em>The Faces
-                                    We Forget</em>), and spatial mnemonics (<em>Mind Palace XR</em>).
-                            </li>
-                            <li>
-                                <strong>Open Source AI &amp; Code</strong>
-                                Fine-tuned dialect models on Hugging Face (<a href="https://huggingface.co/samredjr"
-                                    target="_blank" rel="noopener noreferrer">@samredjr</a>) and 52+ open creative
-                                repositories on GitHub (<a href="https://github.com/calluxpore" target="_blank"
-                                    rel="noopener noreferrer">@calluxpore</a>).
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="panel reveal" aria-labelledby="panel-honors">
-                        <h3 id="panel-honors">Individual Honors &amp; Pedagogical Recognitions</h3>
-                        <ul class="panel-list">
-                            <li>
-                                <strong>Top 10 Educator Award (ISA 2022)</strong>
-                                Conferred by International School Awards recognizing pioneering creative technology and
-                                design pedagogy globally.
-                            </li>
-                            <li>
-                                <strong>Top 30% Globally, International Teachers&rsquo; Olympiad</strong>
-                                Global assessment measuring instructional design, pedagogical knowledge, and classroom
-                                leadership.
-                            </li>
-                            <li>
-                                <strong>Triple Academic Gravitas Honors (Pearl Academy, 2021)</strong>
-                                Faculty peer and student awards for <em>Highest Teaching Quality (TQ)</em>, <em>Highest
-                                    Mentoring Quality (MQ)</em>, and <em>Best Mentor</em>.
-                            </li>
-                            <li>
-                                <strong>Virtual Teacher Specialization</strong>
-                                5-course post-graduate specialization conferred by University of California, Irvine
-                                (Coursera, 2020).
-                            </li>
-                            <li>
-                                <strong>AODA Accessibility Certified</strong>
-                                Ontario Information &amp; Communication Standards compliance (2024).
-                            </li>
-                        </ul>
-                    </section>
+                <div class="fields__item" data-reveal>
+                    <h4>Methods and speculative inquiry</h4>
+                    <p>Design fiction, Future Labs and social enterprise, biophilic and sustainable design, usability
+                        in practice, systems design.</p>
                 </div>
-            </section>
-
-            <!-- 5. Extracurriculars & Fun Time -->
-            <section class="section" id="extracurriculars">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Section 05</span>
-                    <h2>Extracurriculars &amp; Fun Time</h2>
-                    <p class="section-lead">
-                        Beyond studio teaching, research, and institutional leadership, my personal pursuits sustain my
-                        creative curiosity, narrative thinking, and experimental maker practice.
-                    </p>
+                <div class="fields__item" data-reveal>
+                    <h4>Interaction and UX</h4>
+                    <p>Interactive products, graduation project supervision, Open Labs UX and UI, ergonomics and
+                        anthropometry, Universal Design for Learning.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="panels">
-                    <section class="panel reveal" aria-labelledby="panel-media">
-                        <h3 id="panel-media">Interactive Media &amp; Visual Arts</h3>
-                        <ul class="panel-list">
-                            <li>
-                                <strong>PC Gaming</strong>
-                                Exploring rich lore and cooperative mechanics through titles like <em>Warframe</em> and
-                                <em>Soulframe</em>. Gaming serves as both a primary outlet for relaxation and a
-                                fascinating case study in interactive design, player agency, and persistent
-                                worldbuilding.
-                            </li>
-                            <li>
-                                <strong>Digital Sketching</strong>
-                                Conceptualizing ideas and creating personal artwork using Procreate. This digital
-                                sketching practice acts as a rapid-fire ideation sandbox, allowing me to translate
-                                abstract thoughts and visual motifs into tangible compositions.
-                            </li>
-                            <li>
-                                <strong>TV &amp; Cinema</strong>
-                                Immersing myself in narrative fiction, serialized sci-fi, and complex worldbuilding. I
-                                enjoy dissecting how contemporary media constructs immersive universes, pacing, and
-                                emotional resonance across different visual mediums.
-                            </li>
-                        </ul>
-                    </section>
+        <!-- ==================== STUDENTS ==================== -->
+        <section class="students" id="students" aria-labelledby="students-title">
+            <div class="students__head">
+                <h2 class="head" id="students-title" data-reveal>What students went on to do</h2>
+                <p data-reveal>Graduation projects from industrial design studios I supervised at Pearl Academy, and
+                    where their designers work now.</p>
+            </div>
 
-                    <section class="panel reveal" aria-labelledby="panel-literary">
-                        <h3 id="panel-literary">Literary Practice &amp; Experimental Craft</h3>
-                        <ul class="panel-list">
-                            <li>
-                                <strong>Reading &amp; Audiobooks</strong>
-                                Maintaining an insatiable reading habit, having surpassed 200 books read this year alone
-                                through a mix of print and audiobooks. I am currently reading <em>Qualify</em> by Vera
-                                Nazarian, while Agatha Christie remains my enduring favorite author for her masterclass
-                                execution of plotting, character psychology, and intricate puzzle-solving.
-                            </li>
-                            <li>
-                                <strong>Writing</strong>
-                                Crafting blog posts and critical essays that explore the intersections of design, human
-                                memory, and artificial intelligence. Writing gives me a structured space to formalize
-                                passing observations into cohesive critical arguments.
-                            </li>
-                            <li>
-                                <strong>Creative Making</strong>
-                                Directing energy into experimental portfolio projects and creative technology
-                                explorations. These hands-on endeavors allow me to test out unorthodox tools, push
-                                technical boundaries, and experiment without the constraints of a formal client or
-                                curriculum.
-                            </li>
-                        </ul>
-                    </section>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Artemis 389</h3>
+                <div class="project__detail">
+                    <p class="project__who">Anuja Tripathi</p>
+                    <ul>
+                        <li>Gold Award, IDA Design Awards 2021</li>
+                        <li>Top Winner, European Product Design Awards 2020</li>
+                        <li>Winner, DNA Paris Design Awards 2021</li>
+                        <li>Featured in the iF World Design Guide 2020</li>
+                        <li>Finalist, IxDA Interaction Awards 2021</li>
+                    </ul>
+                    <p class="project__now">Now in Stockholm, after a master’s at Umeå Institute of Design.</p>
                 </div>
-            </section>
-        </main>
-    </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Kara 108RG</h3>
+                <div class="project__detail">
+                    <p class="project__who">Shraddha Kumbhar</p>
+                    <ul>
+                        <li>Global Grad Show, Dubai Design Week 2020, selected by Caroline Roux</li>
+                        <li>Featured in <em>Dezeen</em>, <em>Asia Today</em> and <em>Disruptive Asia</em></li>
+                        <li>Most Professional Project, graduation showcase</li>
+                    </ul>
+                    <p class="project__now">Now in Vancouver, a product designer at Standard Fusion and Esvedra
+                        Wellness.</p>
+                </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Carapace</h3>
+                <div class="project__detail">
+                    <p class="project__who">Vaishnavi Shiroorkar</p>
+                    <ul>
+                        <li>Environmental Sustainability Award, TISDC 2022</li>
+                        <li>Awards in Society and Life Safety, IDA Design Awards 2022</li>
+                        <li>Winner, European Product Design Awards 2023</li>
+                        <li>Winner, DNA Paris Design Awards 2023</li>
+                        <li>Finalist, London International Creative Competition 2022</li>
+                    </ul>
+                    <p class="project__now">Now in London after a master’s at the RCA, leading social enterprise and
+                        emergency shelter design.</p>
+                </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Budding Buddy</h3>
+                <div class="project__detail">
+                    <p class="project__who">Shivani Jadhav</p>
+                    <ul>
+                        <li>First Prize, Awwchitecture Design Competition 2019</li>
+                        <li>First Prize, ADI Battle of the Projects, Pune Design Fest 2020</li>
+                        <li>Course Winner, Adobe XD RMIT UX Awards 2021</li>
+                    </ul>
+                    <p class="project__now">Now in Melbourne, an industrial and graphic designer at Ozito, after
+                        graduate study at RMIT and the University of Melbourne.</p>
+                </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Karat</h3>
+                <div class="project__detail">
+                    <p class="project__who">Harsh Lotiya</p>
+                    <ul>
+                        <li>Featured design, Design:Impact Awards 2020</li>
+                    </ul>
+                    <p class="project__now">Now in Dublin after a master’s at UCD, designing consumer products.</p>
+                </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Teemo</h3>
+                <div class="project__detail">
+                    <p class="project__who">Harshit Tareja</p>
+                    <ul>
+                        <li>Shortlisted, Design Singapore Council Awards</li>
+                    </ul>
+                    <p class="project__now">Now in Singapore, an interaction designer.</p>
+                </div>
+            </article>
+            <article class="project" data-reveal>
+                <h3 class="project__name head">Rhea Matthew</h3>
+                <div class="project__detail">
+                    <p class="project__who">Industrial design graduate</p>
+                    <ul>
+                        <li>Corporate CEO Award, the only designer recognised across the organisation</li>
+                    </ul>
+                    <p class="project__now">Now in Loughborough after a master’s at Loughborough University, a senior UX
+                        and product design lead.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ==================== AWARDS BAND ==================== -->
+        <section class="band" aria-labelledby="band-title">
+            <h2 class="sr-only" id="band-title">Awards won by students</h2>
+            <div class="band__track">
+                <p class="band__line">IDA Gold <span class="band__dot" aria-hidden="true"></span> EPDA <span
+                        class="band__dot" aria-hidden="true"></span> DNA Paris <span class="band__dot"
+                        aria-hidden="true"></span> Dubai Design Week <span class="band__dot" aria-hidden="true"></span>
+                    Dezeen <span class="band__dot" aria-hidden="true"></span> iF Design Guide <span class="band__dot"
+                        aria-hidden="true"></span> IxDA <span class="band__dot" aria-hidden="true"></span> TISDC <span
+                        class="band__dot" aria-hidden="true"></span></p>
+                <p class="band__line" aria-hidden="true">IDA Gold <span class="band__dot"></span> EPDA <span
+                        class="band__dot"></span> DNA Paris <span class="band__dot"></span> Dubai Design Week <span
+                        class="band__dot"></span> Dezeen <span class="band__dot"></span> iF Design Guide <span
+                        class="band__dot"></span> IxDA <span class="band__dot"></span> TISDC <span
+                        class="band__dot"></span></p>
+            </div>
+        </section>
+        <p class="band__note">Awards and features won by student projects from studios I supervised.</p>
+
+        <!-- ==================== SCHOLARSHIP ==================== -->
+        <section class="scholar" id="scholarship" aria-labelledby="scholarship-title">
+            <figure class="scholar__picture" data-reveal>
+                <img src="_assets/found/johann-romberch-congestorium-artificiose.webp" width="1600" height="2163"
+                    alt="A page of a 1520 book printed with a grid of small woodcut birds, each standing for a letter"
+                    loading="lazy">
+                <figcaption>A visual alphabet of birds from Johann Romberch’s <em>Congestorium artificiose
+                        memorie</em>, 1520, a manual of the memory arts.</figcaption>
+            </figure>
+
+            <div class="scholar__text">
+                <h2 class="head" id="scholarship-title" data-reveal>Research and honours</h2>
+                <p class="scholar__lead" data-reveal>My master’s thesis, “From Method of Loci to Digital
+                    Mnemonics”, asks how AI and augmented reality could rebuild the memory palace. Defended at
+                    OCAD University on 16 April 2025 and passed without condition, advised by Dr. Alexis Morris and
+                    Dr. Sara Diamond.</p>
+
+                <h3 class="scholar__sub lead" data-reveal>Research and open source</h3>
+                <dl class="scholar__list">
+                    <div data-reveal>
+                        <dt>Civitai, <a class="link" href="https://civitai.com/user/callux" target="_blank"
+                                rel="noopener noreferrer">@callux</a></dt>
+                        <dd>More than 75 custom models trained, 12,000 downloads and 3,500 generated works. Selected for
+                            the curated <em>Fragments of Visions</em> showcase in May 2026.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>ACE Lab, OCAD University</dt>
+                        <dd>Evaluation metrics and experimental protocols for AI and mixed reality on the MAFA and
+                            OMAFRA project, with TCPS2 research ethics protocols.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Fifteen published essays</dt>
+                        <dd>On synthetic memory, latent space, face blindness (<em>The Faces We Forget</em>) and
+                            spatial memory (<em>Mind Palace XR</em>).</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Open models and code</dt>
+                        <dd>Fine-tuned dialect models on Hugging Face (<a class="link"
+                                href="https://huggingface.co/samredjr" target="_blank"
+                                rel="noopener noreferrer">@samredjr</a>) and more than 52 creative technology
+                            repositories on GitHub (<a class="link" href="https://github.com/calluxpore"
+                                target="_blank" rel="noopener noreferrer">@calluxpore</a>).</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Papers and posters</dt>
+                        <dd>Abstracts selected for DCIO 2022 London and CAADRIA 2023; a research poster in Design
+                            Morphine’s Generative Morphologies series.</dd>
+                    </div>
+                </dl>
+
+                <h3 class="scholar__sub lead" data-reveal>Honours</h3>
+                <dl class="scholar__list">
+                    <div data-reveal>
+                        <dt>Top 10 Educator, International School Awards 2022</dt>
+                        <dd>For creative technology and design pedagogy.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Top 30 per cent worldwide, International Teachers’ Olympiad 2022</dt>
+                        <dd>A global assessment of instructional design and classroom leadership.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Three Academic Gravitas awards, Pearl Academy 2021</dt>
+                        <dd>Highest Teaching Quality, Highest Mentoring Quality and Best Mentor, from faculty peers
+                            and students. Research Award, Pearl Academy, 2017.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>Virtual Teacher Specialization</dt>
+                        <dd>A five-course specialization from the University of California, Irvine, 2020.</dd>
+                    </div>
+                    <div data-reveal>
+                        <dt>AODA accessibility, 2024</dt>
+                        <dd>Ontario information and communication standards.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ==================== OUTSIDE ==================== -->
+        <section class="outside" aria-labelledby="outside-title">
+            <h2 class="outside__title head" id="outside-title" data-reveal>Outside the studio</h2>
+            <p class="outside__statement statement" data-reveal>More than 200 books this year, in print and on audio.
+                Agatha Christie is still the favourite; “Qualify” by Vera Nazarian is the one on the go.</p>
+            <dl class="outside__list">
+                <div data-reveal>
+                    <dt>PC games</dt>
+                    <dd><em>Warframe</em> and <em>Soulframe</em>: a way to rest, and a running case study in player
+                        agency and persistent worlds.</dd>
+                </div>
+                <div data-reveal>
+                    <dt>Sketching</dt>
+                    <dd>Personal drawing in Procreate, a fast place to turn a passing thought into a composition.</dd>
+                </div>
+                <div data-reveal>
+                    <dt>Film and television</dt>
+                    <dd>Serialised science fiction, watched for how worlds are built, paced and made to feel real.
+                    </dd>
+                </div>
+                <div data-reveal>
+                    <dt>Writing</dt>
+                    <dd>Essays on design, memory and AI, where passing observations become arguments.</dd>
+                </div>
+                <div data-reveal>
+                    <dt>Making</dt>
+                    <dd>Experiments with unfamiliar tools, without a client or a curriculum to answer to.</dd>
+                </div>
+                <div data-reveal>
+                    <dt>Mentoring</dt>
+                    <dd>Open sessions with designers around the world on ADPList.</dd>
+                </div>
+            </dl>
+        </section>
+    </main>
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div>
-                <p><strong>Samarth Reddy</strong> &middot; Teaching Dossier</p>
-                <p class="footer-meta">Studio-Led Pedagogy in Design, Computation, and AI &middot; September 2026</p>
-            </div>
-            <nav class="footer-links" aria-label="Contact and profiles">
-                <a href="mailto:iamsamarth@gmail.com">Email</a>
-                <a href="https://portfolio-5208db.webflow.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                <a href="https://www.linkedin.com/in/samredjunior" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/calluxpore" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://huggingface.co/samredjr" target="_blank" rel="noopener noreferrer">Hugging Face</a>
-                <a href="https://civitai.com/user/callux" target="_blank" rel="noopener noreferrer">Civitai</a>
+    <footer class="foot" id="contact" aria-labelledby="contact-title">
+        <figure class="foot__picture">
+            <img src="_assets/hero-portrait.webp" width="1122" height="1402" alt="" loading="lazy">
+        </figure>
+        <div class="foot__body">
+            <p class="foot__mark">Samarth Reddy</p>
+            <h2 class="sr-only" id="contact-title">Contact</h2>
+            <nav class="foot__menu" aria-label="Sections">
+                <a href="#philosophy">Philosophy</a>
+                <a href="#trajectory">Institutions</a>
+                <a href="#studios">Studios</a>
+                <a href="#students">Students</a>
+                <a href="#scholarship">Scholarship</a>
             </nav>
+            <div class="foot__blocks">
+                <div>
+                    <h3>Contact</h3>
+                    <a class="link" href="mailto:iamsamarth@gmail.com">iamsamarth@gmail.com</a>
+                    <a class="link" href="https://portfolio-5208db.webflow.io/" target="_blank"
+                        rel="noopener noreferrer">Portfolio</a>
+                    <a class="link" href="https://www.linkedin.com/in/samredjunior" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <p>Dehradun, India and Toronto, Canada</p>
+                </div>
+                <div>
+                    <h3>Work in the open</h3>
+                    <a class="link" href="https://github.com/calluxpore" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                    <a class="link" href="https://huggingface.co/samredjr" target="_blank" rel="noopener noreferrer">Hugging
+                        Face</a>
+                    <a class="link" href="https://civitai.com/user/callux" target="_blank"
+                        rel="noopener noreferrer">Civitai</a>
+                    <button class="link foot__print" type="button" data-print>Save this dossier as a PDF</button>
+                </div>
+            </div>
+            <p class="credits">Pictures and footage: <a href="https://commons.wikimedia.org/wiki/File:View_of_Doon_Valley_from_Kipling_Trail_Uttarakhand_India.jpg">“View of Doon Valley from Kipling Trail”</a> by Daniel Romanson, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>; <a href="https://commons.wikimedia.org/wiki/File:OCAD_University_Toronto.jpg">“OCAD University Toronto”</a> by ぐら (Gura), <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>; <a href="https://commons.wikimedia.org/wiki/File:Tree_canopy_at_Cubbon_park,_Bengaluru_(2026)_01.jpg">“Tree canopy at Cubbon park, Bengaluru”</a> by Gpkp, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Mahatma_Mandir-Gandhinagar.jpg">“Mahatma Mandir-Gandhinagar”</a> by 92saeedshaikh, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Mumbai_Skyline_and_Sail_boats.jpg">“Mumbai Skyline and Sail boats”</a> by iMahesh, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Bras_Basah_(9711279392).jpg">“Bras Basah”</a> by Erwin Soo, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Berlin_Mitte_June_2023_01.jpg">“Berlin Mitte June 2023”</a> by ArildV, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Multiple_shields_stacked_on_an_Arduino_board.jpg">“Multiple shields stacked on an Arduino board”</a> by Kushagra Keshari, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Multimeter_probes_on_breadboard.jpg">“Multimeter probes on breadboard”</a> by Zeroping, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Papierflieger_--_2021_--_7215.jpg">“Papierflieger”</a> by Dietmar Rabich, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Marshmallow_Challenge.jpg">“Marshmallow Challenge”</a> by Yl1665, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Johann_Romberch,_Congestorium_artificiose..._Wellcome_L0032269.jpg">“Johann Romberch, Congestorium artificiose”</a>, Wellcome Collection, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:3D_printing_time-lapse_2026.webm">“3D printing time-lapse 2026”</a> by BoardGamesN3Dprint, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>. All via Wikimedia Commons.</p>
+            <p class="foot__legal">© 2026 Samarth Reddy. Updated September 2026.</p>
         </div>
     </footer>
 
-    <button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="12" y1="19" x2="12" y2="5"></line>
-            <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-    </button>
-
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=7" defer></script>
 </body>
 
 </html>
