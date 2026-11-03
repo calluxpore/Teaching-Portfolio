@@ -1,6 +1,6 @@
 # Teaching Portfolio
 
-Short-form teaching dossier for **Samarth Reddy**, Associate Professor of Practice,
+Short-form teaching dossier for **Samarth Reddy**, Associate Professor,
 School of Design, Graphic Era Deemed to be University.
 
 Static site, no build step. Published via GitHub Pages (`.nojekyll` present).
