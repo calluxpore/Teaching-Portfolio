@@ -17,10 +17,11 @@ Static site, no build step. Published via GitHub Pages (`.nojekyll` present).
 
 ## Design
 
-Palette, typography, and accent behaviour are shared with
-[calluxpore.github.io](https://calluxpore.github.io/): warm paper (`#faf8f4`) with a
-burnt-sienna accent in light mode, near-black with amber in dark mode.
-Type is Newsreader for prose and JetBrains Mono for labels and metadata.
+"Street Plan": a minimal, urban look. Pale paper (`#f3f3f0`) with one street-sign
+blue (`#123fa6`) in light mode, near-black (`#131312`) with a lighter blue in dark mode.
+Type is Atkinson Hyperlegible throughout, self-hosted from `Fonts/`. The portrait is
+black and white until hovered. Contents and section titles stay in place while the
+record scrolls.
 
 Theme follows the OS by default and remembers an explicit choice in `localStorage`.
 
