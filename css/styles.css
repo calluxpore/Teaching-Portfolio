@@ -22,6 +22,7 @@
     --section-gap: clamp(88px, 10vw, 170px);
     --header: 72px;
     --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
     --face: "Atkinson Hyperlegible", system-ui, sans-serif;
     color-scheme: light dark;
 }
@@ -213,6 +214,7 @@ a:hover {
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
+    transition: transform 0.12s linear;
 }
 
 /* -------------------------------------------------------------- Hero */
@@ -691,8 +693,12 @@ h3 {
    The inline theme script sets data-theme, so without script nothing stays hidden. */
 [data-theme] .reveal {
     opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+    transform: translateY(14px);
+    transition: opacity 0.9s var(--ease-soft), transform 0.9s var(--ease-soft);
+}
+
+[data-theme] .reveal:not(.in) {
+    will-change: opacity, transform;
 }
 
 [data-theme] .reveal.in {

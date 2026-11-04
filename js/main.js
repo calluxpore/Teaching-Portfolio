@@ -12,6 +12,7 @@
         initProgressAndTopButton();
         initScrollSpy();
         initReveal();
+        initSmoothWheel();
     });
 
     /* ---------------------------------------------------------------- Theme */
@@ -160,6 +161,55 @@
         });
     }
 
+    /* ---------------------------------------------------------- Smooth wheel
+       Eases mouse-wheel steps into a glide. Distance per notch is unchanged. Touch,
+       keyboard, scrollbar and links stay native, and any of them cancels the glide. */
+    function initSmoothWheel() {
+        if (reduceMotion || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+        const GLIDE_MS = 120; // time constant: larger is floatier
+        let target = 0;
+        let current = 0;
+        let last = 0;
+        let frame = 0;
+
+        function maxScroll() {
+            return document.documentElement.scrollHeight - window.innerHeight;
+        }
+
+        function stop() {
+            cancelAnimationFrame(frame);
+            frame = 0;
+        }
+
+        function step(now) {
+            const dt = Math.min(now - last, 50);
+            last = now;
+            current += (target - current) * (1 - Math.exp(-dt / GLIDE_MS));
+            if (Math.abs(target - current) < 0.5) current = target;
+            window.scrollTo({ top: current, behavior: "instant" });
+            frame = current === target ? 0 : requestAnimationFrame(step);
+        }
+
+        window.addEventListener("wheel", function (e) {
+            // Pinch and ctrl+wheel zoom, and sideways scrolling, stay with the browser.
+            if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+            e.preventDefault();
+
+            const unit = e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? window.innerHeight : 1;
+            if (!frame) {
+                current = target = window.scrollY;
+                last = performance.now();
+                frame = requestAnimationFrame(step);
+            }
+            target = Math.max(0, Math.min(target + e.deltaY * unit, maxScroll()));
+        }, { passive: false });
+
+        ["pointerdown", "keydown", "touchstart"].forEach(function (type) {
+            window.addEventListener(type, stop, { passive: true });
+        });
+    }
+
     /* --------------------------------------------------------------- Reveal */
     function initReveal() {
         const items = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
@@ -174,8 +224,11 @@
 
         const observer = new IntersectionObserver(
             function (entries, obs) {
+                // Stagger only what arrives together, so nothing waits on its page position.
+                let arriving = 0;
                 entries.forEach(function (entry) {
                     if (!entry.isIntersecting) return;
+                    entry.target.style.transitionDelay = Math.min(arriving++, 3) * 70 + "ms";
                     entry.target.classList.add("in");
                     obs.unobserve(entry.target);
                 });
@@ -183,9 +236,7 @@
             { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
         );
 
-        items.forEach(function (el, i) {
-            // Stagger siblings slightly so grids cascade rather than pop as one block.
-            el.style.transitionDelay = (i % 4) * 60 + "ms";
+        items.forEach(function (el) {
             observer.observe(el);
         });
 
